@@ -1,4 +1,4 @@
-package top.wujinxing.designpatterns.decorator;
+package top.wujinxing.DesignPatterns.decorator;
 
 import java.io.BufferedOutputStream;
 import java.io.DataOutputStream;

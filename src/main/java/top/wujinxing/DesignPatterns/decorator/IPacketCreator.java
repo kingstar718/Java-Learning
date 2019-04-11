@@ -1,4 +1,4 @@
-package top.wujinxing.designpatterns.decorator;
+package top.wujinxing.DesignPatterns.decorator;
 
 /**
  * @author: wujinxing
