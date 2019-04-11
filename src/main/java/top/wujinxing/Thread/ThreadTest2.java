@@ -3,7 +3,7 @@ package top.wujinxing.Thread;
 /**
  * @author: wujinxing
  * @date: 2019/2/18 22:06
- * @description:使用扩展Thread的独立类
+ * @description: 使用扩展Thread的独立类
  */
 public class ThreadTest2 {
     public static void main(String[] args){

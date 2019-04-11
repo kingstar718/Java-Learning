@@ -3,7 +3,7 @@ package top.wujinxing.Thread;
 /**
  * @author: wujinxing
  * @date: 2019/2/20 15:16
- * @description:
+ * @description: 线程执行的不确定性
  */
 public class ThreadTest3 extends Thread {
     @Override
