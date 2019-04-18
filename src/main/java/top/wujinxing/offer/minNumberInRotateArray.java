@@ -47,7 +47,7 @@ public class minNumberInRotateArray {
         }
         int l= 0, h = array.length-1;
         while (l < h){
-            int m = l + (h-1)/2;
+            int m = l + (h-l)/2;
             if (array[m] <= array[h]){
                 h = m;
             }else {
@@ -61,6 +61,7 @@ public class minNumberInRotateArray {
     public void Test(){
         int[] a = {3,4,5,1,2};
         System.out.println(minNumberInRotateArrayTest(a));
+        System.out.println(minNumberInRotateArrayTest2(a));
     }
 
 }
