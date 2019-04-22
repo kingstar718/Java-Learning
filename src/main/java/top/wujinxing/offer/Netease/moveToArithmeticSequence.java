@@ -1,4 +1,4 @@
-package top.wujinxing.offer.Pinduoduo;
+package top.wujinxing.offer.Netease;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -23,7 +23,7 @@ public class moveToArithmeticSequence {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int seq[] = new int[n];
+        int[] seq = new int[n];
         for (int i = 0; i < n; i++){
             seq[i] = sc.nextInt();
         }
