@@ -1,7 +1,7 @@
 package top.wujinxing.offer.Aqiyi;
 
-import java.util.HashMap;
-import java.util.Map;
+
+import java.util.HashSet;
 import java.util.Scanner;
 
 /**
@@ -32,7 +32,21 @@ public class DNA {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
-        //System.out.println(s);
+
+        int i,j,n = s.length();
+        for (i=1; i <= n; i++){
+            HashSet<String> set = new HashSet<>();
+            for (j=0; j < n-i; j++){
+                set.add(s.substring(j,j+i));
+            }
+            if (set.size()<Math.pow(4,i)){
+                System.out.println(i);
+                break;
+            }
+        }
+
+
+        /*//System.out.println(s);
         int aNum = 0;
         int cNum = 0;
         int gNum = 0;
@@ -94,6 +108,6 @@ public class DNA {
                     
                 }
             }
-        }
+        }*/
     }
 }
