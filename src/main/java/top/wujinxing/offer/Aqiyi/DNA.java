@@ -36,7 +36,7 @@ public class DNA {
         int i,j,n = s.length();
         for (i=1; i <= n; i++){
             HashSet<String> set = new HashSet<>();
-            for (j=0; j < n-i; j++){
+            for (j=0; j <= n-i; j++){
                 set.add(s.substring(j,j+i));
             }
             if (set.size()<Math.pow(4,i)){
