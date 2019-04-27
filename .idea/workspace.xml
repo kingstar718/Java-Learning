@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b5352bc-bde1-4c87-b215-09b125ea44fb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Huawei/Drink_Soda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Huawei/Remove_duplication.java" afterDir="false" />
+    <list default="true" id="8b5352bc-bde1-4c87-b215-09b125ea44fb" name="Default" comment="offer code">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Learning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/StringValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/StringValue.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,92 +19,118 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Maximum_Depth_of_Binary_Tree_104.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Tree/Maximum_Depth_of_Binary_Tree_104.java">
+      <file leaf-file-name="FileDemo2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/FileDemo2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state relative-caret-position="189">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Invert_Binary_Tree_226.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Tree/Invert_Binary_Tree_226.java">
+      <file leaf-file-name="FileDemo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/FileDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="487">
+              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constructing_palindromes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Tencent/Constructing_palindromes.java">
+      <file leaf-file-name="FileDemo3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/FileDemo3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-210">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="399">
+              <caret line="40" column="58" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Alphabetic_Shift.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Tencent/Alphabetic_Shift.java">
+      <file leaf-file-name="FileDemo4.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/FileDemo4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+            <state relative-caret-position="172">
+              <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="two_tuples_max_min.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Tencent/two_tuples_max_min.java">
+      <file leaf-file-name="NetDemo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/NetDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+            <state relative-caret-position="315">
+              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Drink_Soda.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Huawei/Drink_Soda.java">
+      <file leaf-file-name="GreetingClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket/GreetingClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="189">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Remove_duplication.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Huawei/Remove_duplication.java">
+      <file leaf-file-name="GreetingServer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket/GreetingServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+            <state relative-caret-position="-248">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Balanced_Binary_Tree_110.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Tree/Balanced_Binary_Tree_110.java">
+      <file leaf-file-name="SocketThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket/SocketThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state relative-caret-position="326">
+              <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#237#238#0" expanded="true" />
+                <element signature="e#272#273#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Diameter_of_Binary_Tree_543.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Tree/Diameter_of_Binary_Tree_543.java">
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state relative-caret-position="193">
+              <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreeNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Tree/TreeNode.java">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state relative-caret-position="693">
+              <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,37 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Array/longestPalindrome_409.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Array/isIsomorphic_205.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Array/Palindrome_Number_9.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Array/Count_Binary_Substrings_696.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/singleton/Singleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/SimpleFactory/ConcreteProduct2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/SimpleFactory/ConcreteProduct1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/SimpleFactory/ConcreteProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/SimpleFactory/SimpleFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/SimpleFactory/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/FactoryMethod/Factory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/FactoryMethod/ConcreteFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/FactoryMethod/ConcreteFactory1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/FactoryMethod/ConcreteProduct1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/FactoryMethod/ConcreteProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/FactoryMethod/ConcreteProduct2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/FactoryMethod/ConcreteFactory2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/FactoryMethod/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/AbstractFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/ConcreteFactory1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/ConcreteFactory2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/ProductA1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/ProductA2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/ProductB1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/ProductB2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/Builder/AbstractStringBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/Builder/StringBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/Builder/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/Prototype/Prototype.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/Prototype/ConcretePrototype.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/Prototype/Cilent.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Array/Two_Sum.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Array/Contains_Duplicate_217.java" />
@@ -182,6 +180,37 @@
         <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/huawei/Drink_Soda.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Huawei/Drink_Soda.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Huawei/Remove_duplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/reConstructBinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/minNumberInRotateArray.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/NumberOf1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/HasSubtree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/PrintFromTopToBottom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/VerifySquenceOfBST.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Netease/interleave01.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Netease/operationSequence.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Netease/lifeTime.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Netease/moveToArithmeticSequence.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Netease/CrazyQueue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/CompareCycleNumber.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/DNA.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/deleteString.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/airTravel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/PalindromePrimes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/StringValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/FixedArray.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/HttpComponents/demo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/HttpComponents/demo1.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/demo1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/IO/FileExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/IO/FileDemo3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/IO/FileDemo4.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/IO/NetDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket/GreetingClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket/GreetingServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket/SocketThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket/Server.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket/Client.java" />
       </list>
     </option>
   </component>
@@ -212,11 +241,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="317" />
-    <option name="y" value="-13" />
-    <option name="width" value="1599" />
-    <option name="height" value="1005" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="310" />
+    <option name="y" value="2" />
+    <option name="width" value="1618" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -226,6 +255,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Java-Learning" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Java-Learning" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -259,52 +300,11 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wujinxing" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Java-Learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java-Learning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wujinxing" type="462c0819:PsiDirectoryNode" />
-              <item name="offer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java-Learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java-Learning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wujinxing" type="462c0819:PsiDirectoryNode" />
-              <item name="offer" type="462c0819:PsiDirectoryNode" />
-              <item name="Huawei" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java-Learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java-Learning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wujinxing" type="462c0819:PsiDirectoryNode" />
-              <item name="offer" type="462c0819:PsiDirectoryNode" />
-              <item name="Tencent" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Java-Learning" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Java-Learning" type="616d4139:PackageViewModuleNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,7 +316,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -339,64 +339,64 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Remove_duplication">
-    <configuration name="Alphabetic_Shift" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.wujinxing.offer.Tencent.Alphabetic_Shift" />
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.wujinxing.IO.Socket.Client" />
       <module name="Java-Learning" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.wujinxing.offer.Tencent.*" />
+          <option name="PATTERN" value="top.wujinxing.IO.Socket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Constructing_palindromes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.wujinxing.offer.Tencent.Constructing_palindromes" />
+    <configuration name="GreetingClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.wujinxing.IO.Socket.GreetingClient" />
       <module name="Java-Learning" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.wujinxing.offer.Tencent.*" />
+          <option name="PATTERN" value="top.wujinxing.IO.Socket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Drink_Soda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.wujinxing.offer.Huawei.Drink_Soda" />
+    <configuration name="GreetingServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.wujinxing.IO.Socket.GreetingServer" />
       <module name="Java-Learning" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.wujinxing.offer.Huawei.*" />
+          <option name="PATTERN" value="top.wujinxing.IO.Socket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Remove_duplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.wujinxing.offer.Huawei.Remove_duplication" />
+    <configuration name="NetDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.wujinxing.IO.NetDemo" />
       <module name="Java-Learning" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.wujinxing.offer.Huawei.*" />
+          <option name="PATTERN" value="top.wujinxing.IO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.wujinxing.IO.Socket.Server" />
+      <module name="Java-Learning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.wujinxing.IO.Socket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="two_tuples_max_min" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.wujinxing.offer.Tencent.two_tuples_max_min" />
-      <module name="Java-Learning" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.wujinxing.offer.Tencent.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -437,19 +437,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.Constructing_palindromes" />
-      <item itemvalue="Application.Alphabetic_Shift" />
-      <item itemvalue="Application.two_tuples_max_min" />
-      <item itemvalue="Application.Drink_Soda" />
-      <item itemvalue="Application.Remove_duplication" />
+      <item itemvalue="Application.NetDemo" />
+      <item itemvalue="Application.GreetingServer" />
+      <item itemvalue="Application.GreetingClient" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.Client" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Remove_duplication" />
-        <item itemvalue="Application.Drink_Soda" />
-        <item itemvalue="Application.two_tuples_max_min" />
-        <item itemvalue="Application.Alphabetic_Shift" />
-        <item itemvalue="Application.Constructing_palindromes" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.GreetingClient" />
+        <item itemvalue="Application.GreetingServer" />
+        <item itemvalue="Application.NetDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -471,6 +471,11 @@
       <workItem from="1554858043516" duration="6475000" />
       <workItem from="1554944635452" duration="3676000" />
       <workItem from="1555290710592" duration="11035000" />
+      <workItem from="1555404781988" duration="524000" />
+      <workItem from="1555553100922" duration="10356000" />
+      <workItem from="1555911328616" duration="3297000" />
+      <workItem from="1555988289870" duration="14982000" />
+      <workItem from="1556084525417" duration="18368000" />
     </task>
     <task id="LOCAL-00001" summary="剑指offer">
       <created>1554347185261</created>
@@ -591,43 +596,106 @@
       <option name="project" value="LOCAL" />
       <updated>1555297193084</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="offer code">
+      <created>1555556711456</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1555556711456</updated>
+    </task>
+    <task id="LOCAL-00019" summary="offer code">
+      <created>1555559527662</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1555559527662</updated>
+    </task>
+    <task id="LOCAL-00020" summary="offer code">
+      <created>1555568602737</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1555568602737</updated>
+    </task>
+    <task id="LOCAL-00021" summary="offer code">
+      <created>1555914591125</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1555914591125</updated>
+    </task>
+    <task id="LOCAL-00022" summary="offer code">
+      <created>1556019761798</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1556019761798</updated>
+    </task>
+    <task id="LOCAL-00023" summary="offer code">
+      <created>1556077499795</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1556077499795</updated>
+    </task>
+    <task id="LOCAL-00024" summary="offer code">
+      <created>1556086203923</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1556086203923</updated>
+    </task>
+    <task id="LOCAL-00025" summary="file code">
+      <created>1556159798141</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1556159798141</updated>
+    </task>
+    <task id="LOCAL-00026" summary="socket">
+      <created>1556164380630</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1556164380630</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="isIsomorphic_205_test - 2019.04.09 at 09h 48m 28s.xml">
-      <configuration name="isIsomorphic_205.test" configurationId="JUnit" />
+    <history-entry file="minNumberInRotateArray_Test - 2019.04.18 at 10h 47m 41s.xml">
+      <configuration name="minNumberInRotateArray.Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Palindrome_Number_9_test - 2019.04.09 at 09h 56m 54s.xml">
-      <configuration name="Palindrome_Number_9.test" configurationId="JUnit" />
+    <history-entry file="minNumberInRotateArray_Test - 2019.04.18 at 10h 50m 24s.xml">
+      <configuration name="minNumberInRotateArray.Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Count_Binary_Substrings_696_test - 2019.04.09 at 10h 04m 32s.xml">
-      <configuration name="Count_Binary_Substrings_696.test" configurationId="JUnit" />
+    <history-entry file="minNumberInRotateArray_Test - 2019.04.18 at 11h 05m 51s.xml">
+      <configuration name="minNumberInRotateArray.Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Two_Sum_test - 2019.04.10 at 09h 56m 40s.xml">
-      <configuration name="Two_Sum.test" configurationId="JUnit" />
+    <history-entry file="minNumberInRotateArray_Test - 2019.04.18 at 11h 07m 02s.xml">
+      <configuration name="minNumberInRotateArray.Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Contains_Duplicate_217_test - 2019.04.10 at 10h 01m 49s.xml">
-      <configuration name="Contains_Duplicate_217.test" configurationId="JUnit" />
+    <history-entry file="NumberOf1_Test - 2019.04.18 at 11h 14m 34s.xml">
+      <configuration name="NumberOf1.Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Contains_Duplicate_217_test - 2019.04.10 at 10h 02m 04s.xml">
-      <configuration name="Contains_Duplicate_217.test" configurationId="JUnit" />
+    <history-entry file="minNumberInRotateArray - 2019.04.18 at 12h 00m 22s.xml">
+      <configuration name="minNumberInRotateArray" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Longest_Harmonious_Subsequence_594_test - 2019.04.10 at 10h 12m 48s.xml">
-      <configuration name="Longest_Harmonious_Subsequence_594.test" configurationId="JUnit" />
+    <history-entry file="VerifySquenceOfBST_Test - 2019.04.18 at 14h 22m 32s.xml">
+      <configuration name="VerifySquenceOfBST.Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Longest_Consecutive_Sequence_128_test - 2019.04.10 at 10h 35m 27s.xml">
-      <configuration name="Longest_Consecutive_Sequence_128.test" configurationId="JUnit" />
+    <history-entry file="PalindromePrimes_test - 2019.04.24 at 11h 30m 22s.xml">
+      <configuration name="PalindromePrimes.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Longest_Consecutive_Sequence_128_test - 2019.04.10 at 10h 37m 11s.xml">
-      <configuration name="Longest_Consecutive_Sequence_128.test" configurationId="JUnit" />
+    <history-entry file="PalindromePrimes_test - 2019.04.24 at 11h 30m 30s.xml">
+      <configuration name="PalindromePrimes.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ThreadTest7_Test - 2019.04.10 at 17h 28m 58s.xml">
-      <configuration name="ThreadTest7.Test" configurationId="JUnit" />
+    <history-entry file="PalindromePrimes_test - 2019.04.24 at 11h 30m 56s.xml">
+      <configuration name="PalindromePrimes.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51323000" />
+    <option name="totallyTimeSpent" value="98850000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -639,36 +707,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="248" y="2" width="1294" height="800" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32973805" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32650074" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.324031" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
+      <window_info id="Image Layers" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5008183" side_tool="true" weight="0.329429" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20493066" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49918166" weight="0.32973805" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30387598" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.329429" />
       <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26371828" />
+      <window_info id="Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.22734627" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.24979524" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.24979524" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3762811" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3736434" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -690,287 +758,17 @@
     <MESSAGE value="learning" />
     <MESSAGE value="leetcode tree" />
     <MESSAGE value="tencent code" />
-    <option name="LAST_COMMIT_MESSAGE" value="tencent code" />
+    <MESSAGE value="offer code" />
+    <MESSAGE value="file code" />
+    <MESSAGE value="socket" />
+    <option name="LAST_COMMIT_MESSAGE" value="socket" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="27" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/FactoryMethod/ConcreteProduct1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/FactoryMethod/ConcreteProduct2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/FactoryMethod/ConcreteFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/FactoryMethod/ConcreteFactory1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/FactoryMethod/ConcreteFactory2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/FactoryMethod/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/ProductA1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/ProductA2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/ProductB1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/ProductB2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/AbstractProductB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/AbstractProductA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/AbstractFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/ConcreteFactory1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/ConcreteFactory2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1302">
-          <caret line="62" column="60" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/AbstractFactory/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/Builder/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/Builder/AbstractStringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/Builder/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/Prototype/Prototype.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/Prototype/Cilent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/DesignPatterns/Prototype/ConcretePrototype.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Array/Two_Sum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Array/Contains_Duplicate_217.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Array/Longest_Harmonious_Subsequence_594.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Array/Longest_Consecutive_Sequence_128.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/RunnableTest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/ThreadTest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/ThreadTest2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/ThreadTest3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/ThreadTest4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/ThreadTest5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/ThreadTest6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/ThreadTest7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/ThreadTest8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/ThreadTest9.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/ThreadTest10.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/ThreadTest11.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1015,28 +813,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Tree/Invert_Binary_Tree_226.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
+        <state relative-caret-position="399">
           <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Tencent/Constructing_palindromes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
+        <state relative-caret-position="42">
           <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Tencent/Alphabetic_Shift.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        <state relative-caret-position="756">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Tencent/two_tuples_max_min.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
+        <state relative-caret-position="1218">
           <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
         </state>
       </provider>
@@ -1048,10 +846,319 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/reConstructBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Huawei/Remove_duplication.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1722">
+          <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/NumberOf1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/minNumberInRotateArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1029">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/GetNumberOfK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/HasSubtree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/PrintFromTopToBottom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/VerifySquenceOfBST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Pinduoduo/maxProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Netease/interleave01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Netease/operationSequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="987">
+          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Netease/moveToArithmeticSequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Netease/lifeTime.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
-          <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Netease/CrazyQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-349">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/CompareCycleNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/DNA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2352">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/deleteString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/PalindromePrimes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/StringValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="263" column="9" selection-start-line="263" selection-start-column="4" selection-end-line="263" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpComponents/demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/FixedArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java-Learning.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Aqiyi/airTravel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/demo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/FileDemo2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/FileDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/io/FileOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="325" column="24" selection-start-line="325" selection-start-column="24" selection-end-line="325" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/io/BufferedReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11104">
+          <caret line="592" selection-start-line="70" selection-end-line="592" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/io/FileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/FileDemo3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/FileDemo4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/NetDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket/GreetingClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket/GreetingServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-248">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket/SocketThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/IO/Socket/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
