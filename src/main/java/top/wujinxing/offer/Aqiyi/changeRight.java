@@ -24,7 +24,7 @@ import java.util.Scanner;
  * 2
  */
 public class changeRight {
-   public static void main(String[] args) {
+   /*public static void main(String[] args) {
         try(Scanner sc = new Scanner(System.in)) {
             int n = sc.nextInt(), t = sc.nextInt(), a = sc.nextInt();
             System.out.println(helper(n, t, a));
@@ -34,14 +34,14 @@ public class changeRight {
     public static int helper(int n, int t, int a){
         if (t>a) return n-a+t;
         else return a+n-t;
-    }
+    }*/
    // n
    // n道题， 猜t道正确， 总共a道正确
-    /*public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] strs = br.readLine().split(" ");
         int n = Integer.parseInt(strs[0]), t = Integer.parseInt(strs[1]), a = Integer.parseInt(strs[2]);
         System.out.println(Math.min(t, a) + Math.min(n - t, n - a));
-    }*/
+    }
 }
 
