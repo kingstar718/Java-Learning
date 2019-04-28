@@ -1,10 +1,11 @@
 package top.wujinxing.Thread;
 
 /**
- * @author: wujinxing
- * @date: 2019/2/20 17:15
- * @description: 线程优先级
- * 线程默认优先级为5，如果不手动指定，那么线程优先级具有继承性，比如线程A启动线程B，那么线程B的优先级和线程A的优先级相同。
+ * @author wujinxing
+ * date 2019/2/20 17:15
+ * description 线程优先级
+ * 线程默认优先级为5，如果不手动指定，那么线程优先级具有继承性，
+ * 比如线程A启动线程B，那么线程B的优先级和线程A的优先级相同。
  */
 public class ThreadTest8 {
     public static void main(String[] args){

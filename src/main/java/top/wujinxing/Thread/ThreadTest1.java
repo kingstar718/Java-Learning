@@ -1,9 +1,9 @@
 package top.wujinxing.Thread;
 
 /**
- * @author: wujinxing
- * @date: 2019/2/18 21:47
- * @description:多线程创建方式之一————继承Thread类
+ * @ author: wujinxing
+ * @ date: 2019/2/18 21:47
+ * @ description: 多线程创建方式之一————继承Thread类
  */
 public class ThreadTest1 extends Thread {
     @Override

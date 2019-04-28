@@ -1,9 +1,9 @@
 package top.wujinxing.Thread;
 
 /**
- * @author: wujinxing
- * @date: 2019/2/23 21:34
- * @description:    sleep
+ * @author wujinxing
+ * date: 2019/2/23 21:34
+ * description:    sleep
  * sleep(long millis)方法的作用是在指定的毫秒内让当前"正在执行的线程"休眠（暂停执行）。
  * 这个"正在执行的线程"是关键，指的是Thread.currentThread()返回的线程。
  * 根据JDK API的说法，"该线程不丢失任何监视器的所属权"，
@@ -19,7 +19,7 @@ public class ThreadTest13 extends Thread{
                         this.getName() + " begin " + System.currentTimeMillis());
                 Thread.sleep(2000);
                 System.out.println("run threadName = " +
-                        this.getName() + " end" + System.currentTimeMillis());
+                        this.getName() + " end " + System.currentTimeMillis());
             }
             catch (InterruptedException e)
             {
@@ -37,7 +37,7 @@ public class ThreadTest13 extends Thread{
         //begin = 1550929247947
         //end = 1550929247947
         //run threadName = Thread-0 begin 1550929247948
-        //run threadName = Thread-0 end1550929249949
+        //run threadName = Thread-0 end 1550929249949
         //第四句要等第三句2s之后才打印
     }
 }
