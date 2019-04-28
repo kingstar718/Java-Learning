@@ -1,9 +1,9 @@
 package top.wujinxing.Thread;
 
 /**
- * @author: wujinxing
- * @date: 2019/2/23 21:25
- * @description: this.XXX()"和"Thread.currentThread().XXX()"的区别
+ * @author wujinxing
+ * date 2019/2/23 21:25
+ * description this.XXX()"和"Thread.currentThread().XXX()"的区别
  *
  */
 public class ThreadTest12 extends Thread {

@@ -1,9 +1,9 @@
 package top.wujinxing.Thread;
 
 /**
- * @author: wujinxing
- * @date: 2019/2/23 21:46
- * @description: yield()
+ * @author wujinxing
+ * date: 2019/2/23 21:46
+ * description: yield()
  * 暂停当前执行的线程对象，并执行其他线程。
  * 这个暂停是会放弃CPU资源的，并且放弃CPU的时间不确定，有可能刚放弃，
  * 就获得CPU资源了，也有可能放弃好一会儿，才会被CPU执行。
