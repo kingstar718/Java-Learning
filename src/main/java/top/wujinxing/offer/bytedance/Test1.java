@@ -3,6 +3,7 @@ package top.wujinxing.offer.bytedance;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  *
@@ -25,7 +26,11 @@ import java.util.List;
  */
 public class Test1 {
     public static void main(String[] args) {
-
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        String s = sc.next();
+        System.out.println(Integer.max(change(n, m, s, 'a'), change(n, m , s ,'b')));
     }
 
     private static int change(int n, int m, String s, char k){
