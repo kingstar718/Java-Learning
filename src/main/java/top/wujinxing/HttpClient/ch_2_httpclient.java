@@ -22,7 +22,7 @@ import java.util.List;
  * date 2019 2019/6/10 14:18
  * description 官网demo
  */
-public class demo2 {
+public class ch_2_httpclient {
     /**
      * GET请求
      * @throws IOException
@@ -65,7 +65,7 @@ public class demo2 {
 
     @Test
     public void testAlmanac(){
-        Almanac almanac = AlmanacUtil.getAlmanac();
+        AlmanacUtil.Almanac almanac = AlmanacUtil.getAlmanac();
         System.out.println(almanac.toString());
     }
 }

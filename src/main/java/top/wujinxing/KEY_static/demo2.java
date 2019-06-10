@@ -7,14 +7,14 @@ package top.wujinxing.KEY_static;
  */
 public class demo2 {
     public demo2(){
-        System.out.println("demo2 gouzao");
+        System.out.println("ch_2_httpclient gouzao");
     }
     private static demo2 d2 = new demo2();
     static {
         System.out.println("static");
     }
     {
-        System.out.println("demo2");
+        System.out.println("ch_2_httpclient");
     }
 }
 
