@@ -10,8 +10,8 @@ import java.io.IOException;
 
 /**
  * @author wujinxing
- * @date 2019/4/24 16:17
- * @description
+ * date 2019/4/24 16:17
+ * description
  */
 public class demo1 {
     public static void main(String[] args) {
