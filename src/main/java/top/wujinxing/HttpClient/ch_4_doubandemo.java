@@ -18,8 +18,14 @@ import java.io.IOException;
  * date 2019 2019/6/10 16:36
  * description
  */
-public class ch_4_zhihu {
+public class ch_4_doubandemo {
     public static void main(String[] args) throws IOException {
+        String url = "https://book.douban.com/review/9593753/";
+        System.out.println(getReview(url));
+
+    }
+
+    private static void getBookReview() throws IOException {
         CloseableHttpClient httpClient = HttpClients.createDefault();
         HttpGet httpGet = new HttpGet("https://book.douban.com/review/best/");
         CloseableHttpResponse response = httpClient.execute(httpGet);
@@ -29,13 +35,32 @@ public class ch_4_zhihu {
         //Document doc = Jsoup.connect("https://www.zhihu.com/hot").get();
         Elements s = doc.getElementsByClass("main review-item");
         for (Element e: s
-             ) {
+        ) {
             String bookName = e.child(0).child(0).attr("title"); //书名
             String bookReviewAuthor = e.child(1).child(1).text();// 书评作者名
             String bookReviewName = e.child(2).child(0).child(0).text();//书评名
             String bookReviewContent = e.child(2).child(1).child(0).text();//书评简略
-            System.out.println(e.child(2).child(3).child(0).text());
-            System.out.println();
+            String isUseful = e.child(2).child(3).child(0).text(); //认为评论有用人数
+            String isUseless = e.child(2).child(3).child(1).text();  //认为评论无用人数
+            String reviewTime = e.child(1).child(3).text(); //评论时间
+            String reviewAddress = e.child(2).child(0).child(0).attr("href"); //书评地址
         }
+        response.close();
+    }
+
+    private static String getReview(String url) throws IOException {
+        //"https://book.douban.com/review/9593753/"
+        Document doc = Jsoup.connect(url).get();
+        //System.out.println(doc);
+        Elements s = doc.getElementsByClass("review-content clearfix");
+        //Element e = doc.getElementById("review-content");
+        //System.out.println(e);
+        String reviewContent = "";
+        for (Element e:s
+        ) {
+            Elements e1 = e.getElementsByTag("p");
+            reviewContent = e1.toString();
+        }
+        return reviewContent;
     }
 }
