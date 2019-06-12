@@ -19,10 +19,13 @@ import java.io.IOException;
  * description
  */
 public class ch_4_doubandemo {
-    public static void main(String[] args) throws IOException {
-        String url = "https://book.douban.com/review/9593753/";
-        System.out.println(getReview(url));
-
+    public static void main(String[] args) throws IOException, InterruptedException {
+        //String url = "https://book.douban.com/review/9593753/";
+        //System.out.println(getReview(url));
+        for(int i=0; i<10; i++){
+            Thread.sleep(1000);
+            System.out.println(i);
+        }
     }
 
     private static void getBookReview() throws IOException {
