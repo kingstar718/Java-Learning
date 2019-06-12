@@ -20,17 +20,17 @@ import java.io.IOException;
  */
 public class ch_4_doubandemo {
     public static void main(String[] args) throws IOException, InterruptedException {
-        //String url = "https://book.douban.com/review/9593753/";
-        //System.out.println(getReview(url));
-        for(int i=0; i<10; i++){
+        String url = "https://book.douban.com/review/9593753/";
+        getBookReview();
+        /*for(int i=0; i<10; i++){
             Thread.sleep(1000);
             System.out.println(i);
-        }
+        }*/
     }
 
     private static void getBookReview() throws IOException {
         CloseableHttpClient httpClient = HttpClients.createDefault();
-        HttpGet httpGet = new HttpGet("https://book.douban.com/review/best/");
+        HttpGet httpGet = new HttpGet("https://book.douban.com/review/best/?start=180");
         CloseableHttpResponse response = httpClient.execute(httpGet);
         HttpEntity entity = response.getEntity();
         String entityString = EntityUtils.toString(entity);
@@ -45,8 +45,17 @@ public class ch_4_doubandemo {
             String bookReviewContent = e.child(2).child(1).child(0).text();//书评简略
             String isUseful = e.child(2).child(3).child(0).text(); //认为评论有用人数
             String isUseless = e.child(2).child(3).child(1).text();  //认为评论无用人数
-            String reviewTime = e.child(1).child(3).text(); //评论时间
+            //System.out.println(e.child(1).text());
+            String[] reviewTime = e.child(1).text().split(" ");
+            String reTime = reviewTime[1]+reviewTime[2];
+            //System.out.println(reTime);
+            //String reviewTime = e.child(1).child(3).text(); //评论时间
+            String reviewId = e.attr("id");
+
+            System.out.println(Integer.parseInt(reviewId));
+
             String reviewAddress = e.child(2).child(0).child(0).attr("href"); //书评地址
+
         }
         response.close();
     }
