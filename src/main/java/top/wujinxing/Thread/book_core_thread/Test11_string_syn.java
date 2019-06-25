@@ -37,7 +37,7 @@ class Service11{
 
 //原来的Service，线程B会一直等待A，A一直不结束，B就一直在等待
 /*class Service11{
-    synchronized public void methodA(){
+    synchronized_demo public void methodA(){
         System.out.println("methodA begin");
         boolean isContinueRun = true;
         while (isContinueRun){

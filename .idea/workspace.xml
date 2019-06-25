@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5352bc-bde1-4c87-b215-09b125ea44fb" name="Default" comment="HTTPClient &amp; Jsoup">
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/BookSimpleReview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_5_booksimplereview.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_4_doubandemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_4_doubandemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/top/wujinxing/KEY_static/demo2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/top/wujinxing/KEY_static/demo2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/book_core_thread/Test11_string_syn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/book_core_thread/Test11_string_syn.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,12 +19,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_4_doubandemo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_5_booksimplereview.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="54" column="59" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="54" selection-end-column="59" />
+            <state relative-caret-position="95">
+              <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,45 +33,47 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="jar://D:/UsualSoft/apache-maven-3.6.1/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar!/org/jsoup/Jsoup.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/AlmanacUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="860">
-              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            <state relative-caret-position="106">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#973#974#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_3_jsoup.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/BookSimpleReview.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+            <state relative-caret-position="100">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="31" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_2_httpclient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="68" column="47" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+                <element signature="e#542#543#0" expanded="true" />
+                <element signature="e#590#591#0" expanded="true" />
+                <element signature="e#630#631#0" expanded="true" />
+                <element signature="e#664#665#0" expanded="true" />
+                <element signature="e#694#695#0" expanded="true" />
+                <element signature="e#740#741#0" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
+                <element signature="e#816#817#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+                <element signature="e#904#905#0" expanded="true" />
+                <element signature="e#950#951#0" expanded="true" />
+                <element signature="e#987#988#0" expanded="true" />
+                <element signature="e#1020#1021#0" expanded="true" />
+                <element signature="e#1072#1073#0" expanded="true" />
+                <element signature="e#1116#1117#0" expanded="true" />
+                <element signature="e#1153#1154#0" expanded="true" />
+                <element signature="e#1185#1186#0" expanded="true" />
+                <element signature="e#1236#1237#0" expanded="true" />
+                <element signature="e#1278#1279#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,13 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Tree/Invert_Binary_Tree_226.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Tree/Balanced_Binary_Tree_110.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Tree/Diameter_of_Binary_Tree_543.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Tree/Maximum_Depth_of_Binary_Tree_104.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/LeetCode/Tree/TreeNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Tencent/Constructing_palindromes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Tencent/Alphabetic_Shift.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Tencent/two_tuples_max_min.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/huawei/Drink_Soda.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/offer/Huawei/Drink_Soda.java" />
@@ -143,6 +139,13 @@
         <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_4_zhihu.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_4_doubandemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/synchronized_demo/ww.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/synchronized_demo/AccountingSync.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/synchronized_demo/demo1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/synchronized_demo/demo2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/synchronized_demo/AccountingSync2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/BookSimpleReview.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_5_booksimplereview.java" />
       </list>
     </option>
   </component>
@@ -281,20 +284,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ch_4_doubandemo">
+  <component name="RunManager" selected="JUnit.ch_5_booksimplereview.test">
+    <configuration name="AccountingSync2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.wujinxing.Thread.synchronized_demo.AccountingSync2" />
+      <module name="Java-Learning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.wujinxing.Thread.synchronized_demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ch_4_doubandemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.wujinxing.HttpClient.ch_4_doubandemo" />
+    <configuration name="demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.wujinxing.Thread.synchronized_demo.demo1" />
       <module name="Java-Learning" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.wujinxing.HttpClient.*" />
+          <option name="PATTERN" value="top.wujinxing.Thread.synchronized_demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -310,7 +327,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ch_2_httpclient.testAlmanac" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ch_5_booksimplereview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java-Learning" />
       <extension name="coverage">
         <pattern>
@@ -319,8 +336,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="top.wujinxing.HttpClient" />
-      <option name="MAIN_CLASS_NAME" value="top.wujinxing.HttpClient.ch_2_httpclient" />
-      <option name="METHOD_NAME" value="testAlmanac" />
+      <option name="MAIN_CLASS_NAME" value="top.wujinxing.HttpClient.ch_5_booksimplereview" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ch_5_booksimplereview.getBookSimpleReview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java-Learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.wujinxing.HttpClient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.wujinxing.HttpClient" />
+      <option name="MAIN_CLASS_NAME" value="top.wujinxing.HttpClient.ch_5_booksimplereview" />
+      <option name="METHOD_NAME" value="getBookSimpleReview" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -328,7 +362,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ch_3_jsoup.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ch_5_booksimplereview.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java-Learning" />
       <extension name="coverage">
         <pattern>
@@ -337,43 +371,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="top.wujinxing.HttpClient" />
-      <option name="MAIN_CLASS_NAME" value="top.wujinxing.HttpClient.ch_3_jsoup" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ch_3_jsoup.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java-Learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.wujinxing.HttpClient.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="top.wujinxing.HttpClient" />
-      <option name="MAIN_CLASS_NAME" value="top.wujinxing.HttpClient.ch_3_jsoup" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="demo3.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java-Learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.wujinxing.HttpClient.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="top.wujinxing.HttpClient" />
-      <option name="MAIN_CLASS_NAME" value="top.wujinxing.HttpClient.demo3" />
+      <option name="MAIN_CLASS_NAME" value="top.wujinxing.HttpClient.ch_5_booksimplereview" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -393,19 +391,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ch_4_doubandemo" />
-      <item itemvalue="JUnit.demo3.test" />
-      <item itemvalue="JUnit.ch_2_httpclient.testAlmanac" />
-      <item itemvalue="JUnit.ch_3_jsoup.test1" />
-      <item itemvalue="JUnit.ch_3_jsoup.test2" />
+      <item itemvalue="Application.demo1" />
+      <item itemvalue="Application.AccountingSync2" />
+      <item itemvalue="JUnit.ch_5_booksimplereview.getBookSimpleReview" />
+      <item itemvalue="JUnit.ch_5_booksimplereview" />
+      <item itemvalue="JUnit.ch_5_booksimplereview.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ch_4_doubandemo" />
-        <item itemvalue="JUnit.ch_3_jsoup.test2" />
-        <item itemvalue="JUnit.ch_3_jsoup.test1" />
-        <item itemvalue="JUnit.ch_2_httpclient.testAlmanac" />
-        <item itemvalue="JUnit.demo3.test" />
+        <item itemvalue="JUnit.ch_5_booksimplereview.test" />
+        <item itemvalue="JUnit.ch_5_booksimplereview.getBookSimpleReview" />
+        <item itemvalue="JUnit.ch_5_booksimplereview" />
+        <item itemvalue="Application.AccountingSync2" />
+        <item itemvalue="Application.demo1" />
       </list>
     </recent_temporary>
   </component>
@@ -442,7 +440,9 @@
       <workItem from="1560147346876" duration="13442000" />
       <workItem from="1560215447013" duration="7589000" />
       <workItem from="1560301960241" duration="1424000" />
-      <workItem from="1560321002781" duration="3045000" />
+      <workItem from="1560321002781" duration="3085000" />
+      <workItem from="1560823754551" duration="4958000" />
+      <workItem from="1561447195441" duration="9472000" />
     </task>
     <task id="LOCAL-00001" summary="剑指offer">
       <created>1554347185261</created>
@@ -682,43 +682,57 @@
       <option name="project" value="LOCAL" />
       <updated>1560303178732</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="HTTPClient &amp; Jsoup">
+      <created>1560329017695</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1560329017695</updated>
+    </task>
+    <task id="LOCAL-00036" summary="synchronized的三种使用方式">
+      <created>1560826802360</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1560826802361</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="demo3_test - 2019.06.10 at 14h 59m 04s.xml">
-      <configuration name="demo3.test" configurationId="JUnit" />
+    <history-entry file="ch_5_booksimplereview_getBookSimpleReview - 2019.06.25 at 17h 09m 46s.xml">
+      <configuration name="ch_5_booksimplereview.getBookSimpleReview" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="demo3_test - 2019.06.10 at 15h 17m 29s.xml">
-      <configuration name="demo3.test" configurationId="JUnit" />
+    <history-entry file="ch_5_booksimplereview_getBookSimpleReview - 2019.06.25 at 17h 10m 30s.xml">
+      <configuration name="ch_5_booksimplereview.getBookSimpleReview" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="demo2_testAlmanac - 2019.06.10 at 15h 28m 13s.xml">
-      <configuration name="demo2.testAlmanac" configurationId="JUnit" />
+    <history-entry file="ch_5_booksimplereview_getBookSimpleReview - 2019.06.25 at 17h 10m 53s.xml">
+      <configuration name="ch_5_booksimplereview.getBookSimpleReview" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ch_2_httpclient_testAlmanac - 2019.06.10 at 15h 37m 40s.xml">
-      <configuration name="ch_2_httpclient.testAlmanac" configurationId="JUnit" />
+    <history-entry file="ch_5_booksimplereview_getBookSimpleReview - 2019.06.25 at 17h 12m 51s.xml">
+      <configuration name="ch_5_booksimplereview.getBookSimpleReview" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ch_3_jsoup_test1 - 2019.06.10 at 15h 58m 44s.xml">
-      <configuration name="ch_3_jsoup.test1" configurationId="JUnit" />
+    <history-entry file="ch_5_booksimplereview - 2019.06.25 at 17h 13m 02s.xml">
+      <configuration name="ch_5_booksimplereview" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ch_3_jsoup_test1 - 2019.06.10 at 16h 02m 20s.xml">
-      <configuration name="ch_3_jsoup.test1" configurationId="JUnit" />
+    <history-entry file="ch_5_booksimplereview_getBookSimpleReview - 2019.06.25 at 17h 14m 44s.xml">
+      <configuration name="ch_5_booksimplereview.getBookSimpleReview" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ch_3_jsoup_test1 - 2019.06.10 at 16h 03m 06s.xml">
-      <configuration name="ch_3_jsoup.test1" configurationId="JUnit" />
+    <history-entry file="ch_5_booksimplereview_getBookSimpleReview - 2019.06.25 at 17h 19m 26s.xml">
+      <configuration name="ch_5_booksimplereview.getBookSimpleReview" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ch_3_jsoup_test1 - 2019.06.10 at 16h 13m 15s.xml">
-      <configuration name="ch_3_jsoup.test1" configurationId="JUnit" />
+    <history-entry file="ch_5_booksimplereview_getBookSimpleReview - 2019.06.25 at 17h 20m 39s.xml">
+      <configuration name="ch_5_booksimplereview.getBookSimpleReview" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ch_3_jsoup_test2 - 2019.06.10 at 16h 32m 29s.xml">
-      <configuration name="ch_3_jsoup.test2" configurationId="JUnit" />
+    <history-entry file="ch_5_booksimplereview_test - 2019.06.25 at 17h 34m 27s.xml">
+      <configuration name="ch_5_booksimplereview.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ch_3_jsoup_test2 - 2019.06.10 at 16h 32m 34s.xml">
-      <configuration name="ch_3_jsoup.test2" configurationId="JUnit" />
+    <history-entry file="ch_5_booksimplereview_test - 2019.06.25 at 17h 35m 08s.xml">
+      <configuration name="ch_5_booksimplereview.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125197000" />
+    <option name="totallyTimeSpent" value="139667000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -733,7 +747,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23458445" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24128686" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24979524" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -742,8 +756,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32844576" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32551318" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4941349" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35337242" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.35337242" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32973805" />
@@ -789,80 +803,27 @@
     <MESSAGE value="查询一个main执行时的线程" />
     <MESSAGE value="thread" />
     <MESSAGE value="book thread art" />
-    <MESSAGE value="HTTPClient &amp; Jsoup" />
     <MESSAGE value="change file name" />
     <MESSAGE value="douban book review" />
     <MESSAGE value="douban demo" />
     <MESSAGE value="sleep" />
-    <option name="LAST_COMMIT_MESSAGE" value="sleep" />
+    <MESSAGE value="HTTPClient &amp; Jsoup" />
+    <MESSAGE value="synchronized的三种使用方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="synchronized的三种使用方式" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_5_booksimplereview.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/bytedance/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1220">
-          <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/offer/viper/StringCombination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/book_core_thread/wait_and_notify/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/book_core_thread/Test1_interrupt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/book_core_thread/wait_and_notify/Test4_P_C_Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="100" column="6" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/book_core_thread/wait_and_notify/wait_notify_insert_test/BackupA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/book_core_thread/Test11_string_syn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/book_core_thread/test_volatile/Test1_RunThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/book_core_thread/wait_and_notify/Test3_wait_notify_size5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="940">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/book_core_thread/wait_and_notify/Test4_producer_consumer_demo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1161,12 +1122,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_4_doubandemo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/synchronized_demo/demo2.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="54" column="59" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="54" selection-end-column="59" />
+        <state relative-caret-position="120">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/synchronized_demo/demo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1762#1763#0" expanded="true" />
+            <element signature="e#1798#1799#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/synchronized_demo/AccountingSync.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1178,19 +1167,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/AlmanacUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_3_jsoup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
+        <state relative-caret-position="1060">
           <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1200,8 +1179,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_2_httpclient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
+        <state relative-caret-position="1060">
           <caret line="68" column="47" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/Thread/synchronized_demo/AccountingSync2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-328">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_4_doubandemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="47" column="52" lean-forward="true" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/AlmanacUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/BookSimpleReview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#904#905#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#987#988#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
+            <element signature="e#1185#1186#0" expanded="true" />
+            <element signature="e#1236#1237#0" expanded="true" />
+            <element signature="e#1278#1279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/UsualSoft/apache-maven-3.6.1/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar!/org/jsoup/Jsoup.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#973#974#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/wujinxing/HttpClient/ch_5_booksimplereview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
