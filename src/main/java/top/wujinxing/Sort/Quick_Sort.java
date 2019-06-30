@@ -3,23 +3,23 @@ package top.wujinxing.Sort;
 import org.junit.Test;
 
 /**
- * @author: wujinxing
- * @date: 2019/1/10 15:45
- * @description: 快速排序
+ * @author wujinxing
+ * @ date 2019/1/10 15:45
+ * @ description: 快速排序
  * 1.先从数列中取出一个数作为基准书
  * 2.分区过程中，比该数大的全放到右边，小于等于该数的全放在左边
  * 3.在对左右区间重复第二步，直到个区间只有一个数
  */
 public class Quick_Sort {
     //打印数组
-    public static void printArr(int[] arr){
+    private static void printArr(int[] arr){
         for (int a : arr){
             System.out.print(a + " ");
         }
         System.out.println();
     }
 
-    public static void quickSort(int[] arr, int low, int high){
+    private static void quickSort(int[] arr, int low, int high){
         if (arr.length <= 0){
             return;
         }
