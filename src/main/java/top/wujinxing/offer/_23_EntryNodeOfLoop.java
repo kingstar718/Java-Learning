@@ -2,8 +2,6 @@ package top.wujinxing.offer;
 
 import org.junit.Test;
 
-import java.awt.*;
-
 /**
  * @author wujinxing
  * date 2019 2019/7/1 22:13
