@@ -13,7 +13,7 @@ public class _18_2_deleteDuplication {
     public ListNode deleteDuplication(ListNode pHead){
         if (pHead==null || pHead.next==null) return pHead;
         ListNode next = pHead.next;
-        if (pHead.val == next.val){
+        if (pHead.val == next.val){ //当前节点与下节点值相同时
             while (next!=null && pHead.val==next.val){
                 next = next.next;
             }

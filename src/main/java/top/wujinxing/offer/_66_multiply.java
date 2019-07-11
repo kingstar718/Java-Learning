@@ -8,6 +8,7 @@ import org.junit.Test;
  * description 构建乘积数组
  * 给定一个数组A[0,1,...,n-1],请构建一个数组B[0,1,...,n-1],
  * 其中B中的元素B[i]=A[0]*A[1]*...*A[i-1]*A[i+1]*...*A[n-1]。
+ * 即B中第i个元素是A中除去第i个元素后的所有元素之和
  * 不能使用除法。
  */
 public class _66_multiply {
@@ -28,6 +29,7 @@ public class _66_multiply {
         for (int i=0, product=1; i<n; product *= A[i], i++){
             B[i] = product;
         }
+        //经上面循环，每个B[i] = A[0]*A[1]*...A[i-1]
         for (int i=n-1, product=1; i>=0; product *= A[i], i--){
             B[i] *= product;
         }
