@@ -1,13 +1,11 @@
 package top.wujinxing.basictype;
 
-import java.util.Arrays;
-
 /**
  * @author wujinxing
  * date 2019 2019/7/3 16:56
  * description 常见String方法
  */
-public class demo2_String {
+public class ch_06_String {
     public static void main(String[] args) {
         String s = "abdel os";
         System.out.println(s.length());     //8

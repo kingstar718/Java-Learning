@@ -5,7 +5,7 @@ package top.wujinxing.basictype;
  * date 2019 2019/7/3 16:10
  * description 基本数据类型例子
  */
-public class demo1 {
+public class ch_05_Integer {
     public static void main(String[] args) {
         //隐含的类型强制转换
         short s1 = 1;
