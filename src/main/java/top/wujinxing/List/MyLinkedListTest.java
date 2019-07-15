@@ -17,7 +17,7 @@ public class MyLinkedListTest {
         System.out.println(list.get(2));
         System.out.println(list.size());
 
-        /*Iterator iterator = list.iterator();
+        /*iterator iterator = list.iterator();
         while (iterator.hasNext()){
             System.out.println(list.next());
         }*/

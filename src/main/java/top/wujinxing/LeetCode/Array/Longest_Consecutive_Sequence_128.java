@@ -12,7 +12,7 @@ import java.util.Map;
  *
  * Given [100, 4, 200, 1, 3, 2],
  * The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.
- * Copy to clipboardErrorCopied
+ * copy to clipboardErrorCopied
  *
  * 要求以 O(N) 的时间复杂度求解。
  */
