@@ -25,30 +25,28 @@ public class bag {
         int M = 10;
         int[] w = {2,2,6,5,4};
         int[] v = {6,3,5,4,6};
-        /*for (int i=0; i<N; i++){
-            w[i] = sc.nextInt();
-        }
-        for (int i=0; i<N; i++){
-            v[i] = sc.nextInt();
-        }*/
 
         int[][] dp = new int[N+1][M+1];
         for (int i=0; i<N; i++){
-            dp[i+1][0] = 0;
+            dp[i][0] = 0;
         }
-        for (int i=0; i<=M; i++){
-            dp[0][i] = 0;
-        }
-        for (int i=1; i<=N; i++){
+
+        for (int i=N-1; i>=0; i--){
             for (int j=1; j<=M; j++){
-                if (j < w[i-1]){
-                    dp[i][j] = dp[i-1][j];
+                if (j < w[i]){
+                    dp[i][j] = dp[i+1][j];
                 }else {
-                    int m = dp[i-1][j-w[i-1]] + v[i-1];
-                    dp[i][j] = Math.max(dp[i-1][j], dp[i-1][j-w[i-1]]+v[i-1]);
+                    dp[i][j] = Math.max(dp[i+1][j], dp[i+1][j-w[i]]+v[i]);
                 }
             }
         }
-        System.out.println(dp[N][M]);
+        for (int i=0; i<=N; i++){
+            System.out.print("第 " + i + " 行 ");
+            for (int j=0; j<=M; j++){
+                System.out.print(dp[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println(dp[0][M]);
     }
 }
