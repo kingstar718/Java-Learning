@@ -12,32 +12,32 @@ import org.junit.Test;
  */
 public class Quick_Sort {
     //打印数组
-    private static void printArr(int[] arr){
-        for (int a : arr){
+    private static void printArr(int[] arr) {
+        for (int a : arr) {
             System.out.print(a + " ");
         }
         System.out.println();
     }
 
-    private static void quickSort(int[] arr, int low, int high){
-        if (arr.length <= 0){
+    private static void quickSort(int[] arr, int low, int high) {
+        if (arr.length <= 0) {
             return;
         }
-        if (low >= high){
+        if (low >= high) {
             return;
         }
         int left = low;
         int right = high;
 
         int temp = arr[left]; //，坑1：保存基准的值
-        while (left < right){
+        while (left < right) {
             //坑2：从后往前找比基准值小的元素，插入到基准值的坑中
-            while (left < right && arr[right] >= temp){
+            while (left < right && arr[right] >= temp) {
                 right--;
             }
             arr[left] = arr[right];
             //坑3：从前往后找比基准值大的元素，插入到坑2中
-            while (left < right && arr[left] <= temp){
+            while (left < right && arr[left] <= temp) {
                 left++;
             }
             arr[right] = arr[left];
@@ -48,9 +48,10 @@ public class Quick_Sort {
         quickSort(arr, low, left - 1);
         quickSort(arr, left + 1, high);
     }
+
     @Test
-    public void test(){
-        int[] arr = {3,4,1,2,5,7,8,12,32,12,12,33,221,0,1};
-        quickSort(arr,0, arr.length - 1);
+    public void test() {
+        int[] arr = {3, 4, 1, 2, 5, 7, 8, 12, 32, 12, 12, 33, 221, 0, 1};
+        quickSort(arr, 0, arr.length - 1);
     }
 }
