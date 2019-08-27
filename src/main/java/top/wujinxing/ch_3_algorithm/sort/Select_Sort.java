@@ -8,12 +8,14 @@ import java.util.Arrays;
  * @ author: wujinxing
  * @ date: 2019/1/9 16:55
  * @ description:选择排序
+ * 1. 找出数组中最小的数，将该值与当前的i值交换--即第一个最小值与索引为0的值进行交换，第二个最小值与索引值1的进行交换
+ * 2. i依次等于0-n，即逐个将最小值放在当前的i上，即完成排序
  */
 public class Select_Sort {
 
     @Test
     public void test() {
-        int[] arr = {1, 3, 4, 3, 6, 3, 8, 10, 3, 7, 2};
+        int[] arr = {1, 3, 4, 5, 9, 11, 8, 10, 12, 0, 2};
         selectSort(arr, arr.length);
         System.out.println(Arrays.toString(arr));
     }
@@ -22,22 +24,23 @@ public class Select_Sort {
         for (int i = 0; i < length - 1; i++) {
             if (arr == null || length <= 1)
                 return;
-            int minIndex = 0;
-            for (int j = i + 1; j < length; ++j) {
+            int minIndex = i;
+            for (int j = i + 1; j < length; ++j) {  //找出最小元素的数组下标，与当前的i交换
                 if (arr[minIndex] > arr[j]) {
                     minIndex = j;
                 }
             }
             if (minIndex != i) {
-                swap(arr[minIndex], arr[i]);
+                swapArr(arr, minIndex, i); //数组内数据的交换形式
             }
+            System.out.println(Arrays.toString(arr));
         }
     }
 
-    private static void swap(int i, int j) {
-        int temp = j;
-        j = i;
-        i = temp;
+    private static void swapArr(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 
 
