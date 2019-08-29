@@ -10,7 +10,7 @@ import org.junit.Test;
  * 题目描述
  * 写一个函数，求两个整数之和，要求在函数体内不得使用+、-、*、/四则运算符号。
  */
-public class Add {
+public class _48_Add {
     public static void main(String[] args) {
         System.out.println(add(4,5));
         System.out.println(add(66,3333));

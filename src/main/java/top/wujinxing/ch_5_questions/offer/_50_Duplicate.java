@@ -16,7 +16,7 @@ package top.wujinxing.ch_5_questions.offer;
  * 输出
  *
  */
-public class Duplicate {
+public class _50_Duplicate {
     public static void main(String[] args) {
 
     }
