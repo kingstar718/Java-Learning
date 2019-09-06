@@ -36,17 +36,13 @@ public class countString {
         for (int i = 1; i < str.length(); i++) {
             if (str.charAt(i) == str.charAt(i - 1)) {
                 num++;
-                //结束时的临界要加上，最后一位与之前的连续0.
-                if (i == str.length() - 1) {
-                    res = res + num;
-                }
             } else {
                 res = res + num + str.charAt(i);
                 num = 1;
-                //结束时的临界要加上,最后一位与之前不连续时
-                if (i == str.length() - 1) {
-                    res = res + num;
-                }
+            }
+            //结束时的临界要加上,最后一位与之前不连续时
+            if (i == str.length() - 1) {
+                res = res + num;
             }
         }
         return res;

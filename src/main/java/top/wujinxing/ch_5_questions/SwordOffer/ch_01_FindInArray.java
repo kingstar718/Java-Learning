@@ -20,9 +20,9 @@ public class ch_01_FindInArray {
         while (r <= rows - 1 && c >= 0) {
             if (target == matrix[r][c]) {
                 return true;
-            } else if (target > matrix[r][c]) { //比右上角的大，说明不在矩阵左边，在当前列的下边
+            } else if (target > matrix[r][c]) { //比右上角的大，说明不在当前行的左边，在当前列的下边
                 r++;
-            } else { //说明比在该数的左边
+            } else { //说明在该数的左边
                 c--;
             }
         }

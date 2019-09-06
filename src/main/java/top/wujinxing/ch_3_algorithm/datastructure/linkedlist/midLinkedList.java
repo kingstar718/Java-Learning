@@ -23,9 +23,13 @@ public class midLinkedList {
         Node low = list;
         Node fast = list;
 
-        while (fast.next.next != null) {
+        while (fast != null) {
+            if (fast.next != null){
+                fast = fast.next.next;
+            }else {
+                break;
+            }
             low = low.next;
-            fast = fast.next.next;
         }
         return low.val;
     }
