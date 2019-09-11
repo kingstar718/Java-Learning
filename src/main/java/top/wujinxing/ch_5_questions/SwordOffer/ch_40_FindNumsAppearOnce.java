@@ -10,6 +10,6 @@ package top.wujinxing.ch_5_questions.SwordOffer;
 public class ch_40_FindNumsAppearOnce {
 
     public void FindNumsAppearOnce(int [] array,int num1[] , int num2[]) {
-        
+
     }
 }
