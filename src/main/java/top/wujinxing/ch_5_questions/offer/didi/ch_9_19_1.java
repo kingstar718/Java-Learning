@@ -35,6 +35,7 @@ import java.util.Scanner;
  */
 public class ch_9_19_1 {
 
+    //45%
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
