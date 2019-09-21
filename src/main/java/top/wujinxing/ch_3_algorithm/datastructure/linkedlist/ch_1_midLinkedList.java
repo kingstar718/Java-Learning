@@ -5,7 +5,7 @@ package top.wujinxing.ch_3_algorithm.datastructure.linkedlist;
  * date 2019 2019/9/4 12:40
  * description 单链表的中间节点
  */
-public class midLinkedList {
+public class ch_1_midLinkedList {
 
     public static void main(String[] args) {
         Node linkedList = new Node(1);
