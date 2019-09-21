@@ -9,7 +9,7 @@ package top.wujinxing.ch_3_algorithm.datastructure.string;
  * aaaabbbccssaa
  * a4b3c2s2a2
  */
-public class countString {
+public class ch_1_countString {
 
     public static void main(String[] args) {
         String str = "aaaabbbccssaaapc";
