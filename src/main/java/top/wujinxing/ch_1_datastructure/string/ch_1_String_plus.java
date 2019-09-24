@@ -5,7 +5,7 @@ package top.wujinxing.ch_1_datastructure.string;
  * date 2019 2019/7/3 10:49
  * description String中的+
  */
-public class demo1 {
+public class ch_1_String_plus {
     public static void main(String[] args) {
         String s1 = "hello";
         System.out.println(s1.hashCode());
