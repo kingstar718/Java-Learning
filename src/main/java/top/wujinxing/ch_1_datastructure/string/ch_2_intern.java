@@ -5,7 +5,7 @@ package top.wujinxing.ch_1_datastructure.string;
  * date 2019 2019/7/3 11:07
  * description
  */
-public class demo2 {
+public class ch_2_intern {
     public static void main(String[] args) {
         String s1 = "Programming";
         String s2 = new String("Programming");
