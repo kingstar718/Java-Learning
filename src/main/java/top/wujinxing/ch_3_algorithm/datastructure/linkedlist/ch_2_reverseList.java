@@ -26,6 +26,17 @@ public class ch_2_reverseList {
         return pre;
     }
 
+    //递归形式反转链表
+    private Node reverseList(Node node) {
+        if (node == null || node.next == null)
+            return node;
+        Node temp = node.next;
+        Node newNode = reverseList(node.next);
+        temp.next = node;
+        node.next = null;
+        return newNode;
+    }
+
     //反转双向链表
     private DoubleNode reverse_List(DoubleNode head) {
         DoubleNode pre = null;
@@ -101,7 +112,8 @@ public class ch_2_reverseList {
         head.next.next.next = new Node(3);
         head.next.next.next.next = new Node(4);
         print(head);
-        print(reverse_List(head));
+        print(reverseList(head));
+        //print(reverse_List(head));
 
         DoubleNode DNode = new DoubleNode(0);
         DoubleNode DNode2 = new DoubleNode(1);
@@ -119,6 +131,6 @@ public class ch_2_reverseList {
         print(DNode);
         print(reverse_List(DNode));
 
-        print(reversePart(head, 2,4));
+        print(reversePart(head, 2, 4));
     }
 }
