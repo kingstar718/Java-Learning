@@ -31,11 +31,3 @@ public class Reverse_Linked_List {
         return p;
     }
 }
-
-class ListNode{
-    int val;
-    ListNode next;
-    ListNode(int x){
-        val = x;
-    }
-}
