@@ -1,6 +1,4 @@
-package top.wujinxing.ch_5_questions.sensetime;
-
-import java.util.Scanner;
+package top.wujinxing.ch_5_questions.offer.sensetime;
 
 /**
  * @author wujinxing

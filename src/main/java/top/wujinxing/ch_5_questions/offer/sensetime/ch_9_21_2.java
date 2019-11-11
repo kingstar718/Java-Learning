@@ -1,4 +1,4 @@
-package top.wujinxing.ch_5_questions.sensetime;
+package top.wujinxing.ch_5_questions.offer.sensetime;
 
 import java.util.Scanner;
 
