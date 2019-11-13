@@ -1,5 +1,7 @@
 package top.wujinxing.ch_5_questions.LeetCode.Tree;
 
+import org.junit.Test;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
@@ -70,5 +72,17 @@ public class ch_102_BinaryTreeLevelOrderTraversal {
 
         if(node.left != null) helper(node.left, level+1);
         if(node.right != null) helper(node.right, level+1);
+    }
+
+
+    @Test
+    public void test(){
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.left.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+        System.out.println(levelOrder(root).toString());
+        System.out.println(levelOrder2(root).toString());
     }
 }

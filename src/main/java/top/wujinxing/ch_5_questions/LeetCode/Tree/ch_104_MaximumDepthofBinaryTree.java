@@ -5,7 +5,7 @@ package top.wujinxing.ch_5_questions.LeetCode.Tree;
  * @ date: 2019/4/11 09:15
  * @ description: 二叉树的高度
  */
-public class Maximum_Depth_of_Binary_Tree_104 {
+public class ch_104_MaximumDepthofBinaryTree {
     public int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;

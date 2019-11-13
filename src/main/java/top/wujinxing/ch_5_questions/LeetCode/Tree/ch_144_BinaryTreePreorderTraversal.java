@@ -1,5 +1,7 @@
 package top.wujinxing.ch_5_questions.LeetCode.Tree;
 
+import org.junit.Test;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
@@ -59,5 +61,14 @@ public class ch_144_BinaryTreePreorderTraversal {
         res.add(root.val);
         traversal(root.left, res);
         traversal(root.right, res);
+    }
+
+    @Test
+    public void test(){
+        TreeNode root = new TreeNode(1);
+        root.right = new TreeNode(2);
+        root.right.left = new TreeNode(3);
+        System.out.println(preorderTraversal2(root).toString());
+        System.out.println(preorderTraversal(root).toString());
     }
 }
