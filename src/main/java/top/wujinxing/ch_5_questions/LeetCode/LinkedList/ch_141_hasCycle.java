@@ -1,5 +1,8 @@
 package top.wujinxing.ch_5_questions.LeetCode.LinkedList;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * @author wujinxing
  * date 2019 2019/9/27 11:06
@@ -40,8 +43,6 @@ public class ch_141_hasCycle {
      * - 初始判断：`if (head == bull || head. next == null )`，直接返回false；
      * - 循环时，判断fast指针是否已经走到链表末尾，不能只判断 `fast.next != null`，
      * 而是要判断 `fast != null && fast.next != null`，否则当 `fast.next == null时`，会出现空指针异常。
-     * @param head 节点
-     * @return boolean
      */
     public boolean hasCycle(ListNode head) {
         if (head == null || head.next == null)
@@ -55,6 +56,20 @@ public class ch_141_hasCycle {
                 return true;
             }
         }
+        return false;
+    }
+
+    public boolean hasCycle2(ListNode head) {
+        Set<ListNode> nodesSeen = new HashSet<>();
+        while (head != null) {
+            if (nodesSeen.contains(head)) {
+                return true;
+            } else {
+                nodesSeen.add(head);
+            }
+            head = head.next;
+        }
+
         return false;
     }
 }
