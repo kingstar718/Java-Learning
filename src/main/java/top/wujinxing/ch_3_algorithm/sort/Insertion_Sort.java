@@ -46,10 +46,30 @@ public class Insertion_Sort {
         }
     }
 
+    public static void insertionSort3(int[] a, int n) {
+        if (n <= 1) return;
+
+        for (int i = 1; i < n; i++) {
+            int value = a[i];
+            int j = i - 1;
+            // 查找插入的位置
+            for (; j >= 0; --j) {
+                if (a[j] > value) {
+                    a[j + 1] = a[j]; // 数据移动
+                } else {
+                    break;
+                }
+            }
+            a[j + 1] = value; // 插入数据
+        }
+        System.out.println(Arrays.toString(a));
+    }
+
     @Test
     public void Test() {
         int[] arr = {11, 1, 4, 5, 7, 9, 6, 2, 3, 45, 68, 44, 55, 777, 45};
         //insertionSort1(arr);
-        insertionSort2(arr);
+        //insertionSort2(arr);
+        insertionSort3(arr, arr.length);
     }
 }

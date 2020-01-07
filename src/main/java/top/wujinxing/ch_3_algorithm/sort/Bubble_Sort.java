@@ -29,9 +29,29 @@ public class Bubble_Sort {
         }
     }
 
+    public void bubbleSort2(int[] a, int n) {
+        if (n <= 1) return;
+
+        for (int i = 0; i < n; i++) {
+            boolean flag = false;  // 提前退出冒泡循环的标志位
+            for (int j = 0; j < n - i - 1; j++) {
+                if (a[j] > a[j + 1]) { // 交换
+                    int temp = a[j];
+                    a[j] = a[j + 1];
+                    a[j + 1] = temp;
+                    flag = true; // 提前退出
+                }
+            }
+            if (!flag) break;  // 表示没有数据交换，提前退出
+        }
+    }
+
     @Test
     public void test() {
         int[] a = {2, 3, 5, 4, 1, 55, 23, 45, 21, 2, 3, 9};
         bubbleSort(a);
+        int[] a2 = {2, 3, 5, 4, 1, 55, 23, 45, 21, 2, 3, 9};
+        bubbleSort2(a2, a2.length);
+        System.out.println(Arrays.toString(a2));
     }
 }
