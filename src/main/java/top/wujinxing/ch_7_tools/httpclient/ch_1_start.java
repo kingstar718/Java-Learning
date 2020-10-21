@@ -9,6 +9,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.junit.Test;
 
 import java.io.IOException;
 import java.util.Map;
@@ -19,28 +20,37 @@ import java.util.Map;
  * description
  */
 public class ch_1_start {
+
     public static void main(String[] args) {
         //创建httpClient对象
         CloseableHttpClient httpClient = HttpClients.createDefault();
         //创建httpGEt
-        String url = "https://tcc.taobao.com/cc/json/mobile_tel_segment.htm?tel=18829038821";
+        String url = "https://tcc.taobao.com/cc/json/mobile_tel_segment.htm?tel=18888888888";
         HttpGet httpGet = new HttpGet(url);
-        try {
-            CloseableHttpResponse response = httpClient.execute(httpGet);
-            try {
-                HttpEntity httpEntity = response.getEntity();
-                String responseStr = EntityUtils.toString(httpEntity);
-                TelResult telResult = JSON.parseObject(responseStr, TelResult.class);
-                System.out.println(telResult.toString());
-            }finally {
-                response.close();
+        try (CloseableHttpResponse response = httpClient.execute(httpGet)) {
+            HttpEntity httpEntity = response.getEntity();
+            String responseStr = EntityUtils.toString(httpEntity);
+            System.out.println(responseStr);
+            //Map jsonObject = (Map) JSON.parse(responseStr);
+            TelResult result = new TelResult();
+            String[] strings = responseStr.split(",");
+            for (String s: strings){
+                result.setMts(s.split(":")[1]);
+                result.setProvince(s.split(":")[1]);
+                result.setCatName(s.split(":")[1]);
+                result.setTelString(s.split(":")[1]);
+                result.setAreaVid(s.split(":")[1]);
+                result.setIsVid(s.split(":")[1]);
+                result.setCarrier(s.split(":")[1]);
             }
+            System.out.println(result.toString());
+            //System.out.println(jsonObject.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    class TelResult{
+    static class TelResult{
         private String mts;
         private String province;
         private String catName;
