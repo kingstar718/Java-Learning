@@ -12,7 +12,7 @@ import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author wujinxing
@@ -31,20 +31,20 @@ public class ch_1_start {
             HttpEntity httpEntity = response.getEntity();
             String responseStr = EntityUtils.toString(httpEntity);
             System.out.println(responseStr);
-            //Map jsonObject = (Map) JSON.parse(responseStr);
             TelResult result = new TelResult();
             String[] strings = responseStr.split(",");
+            Deque<String> list = new LinkedList<>();
             for (String s: strings){
-                result.setMts(s.split(":")[1]);
-                result.setProvince(s.split(":")[1]);
-                result.setCatName(s.split(":")[1]);
-                result.setTelString(s.split(":")[1]);
-                result.setAreaVid(s.split(":")[1]);
-                result.setIsVid(s.split(":")[1]);
-                result.setCarrier(s.split(":")[1]);
+                list.offer(s.split(":")[1].split("'")[1]);
             }
+            result.setMts(list.poll());
+            result.setProvince(list.poll());
+            result.setCatName(list.poll());
+            result.setTelString(list.poll());
+            result.setAreaVid(list.poll());
+            result.setIsVid(list.poll());
+            result.setCarrier(list.poll());
             System.out.println(result.toString());
-            //System.out.println(jsonObject.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
