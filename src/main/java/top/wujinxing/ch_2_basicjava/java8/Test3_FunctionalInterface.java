@@ -24,7 +24,7 @@ public class Test3_FunctionalInterface {
         //Java 8 允许你通过::关键字获取方法或者构造函数的的引用。
         Converter<String, Integer> converter1 = Integer::valueOf;
         Integer converted1 = converter1.convert("123");
-        System.out.println(converted); //123
+        System.out.println(converted1); //123
     }
 }
 

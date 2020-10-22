@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * @author: wujinxing
  * @date: 2019/3/16 20:49
- * @description:    Lambda表达式
+ * @description: Lambda表达式
  */
 public class Test2_lambda {
 
