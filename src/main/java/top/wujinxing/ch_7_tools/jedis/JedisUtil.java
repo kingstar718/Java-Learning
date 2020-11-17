@@ -21,11 +21,20 @@ public class JedisUtil {
 
     public static String get(String key) {
         Jedis jedis = getJedis();
-        return jedis.get(key);
+        String value = jedis.get(key);
+        close(jedis);
+        return value;
     }
 
     public static void set(String key, String value) {
         Jedis jedis = getJedis();
         jedis.set(key, value);
+        close(jedis);
+    }
+
+    public static void close(Jedis jedis) {
+        if (jedis != null) {
+            jedis.close();
+        }
     }
 }
