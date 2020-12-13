@@ -1,4 +1,4 @@
-package top.wujinxing.ch_2_basicjava.reflection;
+package top.wujinxing.ch_2_basicjava.reflect;
 
 import java.io.Serializable;
 

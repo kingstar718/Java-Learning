@@ -1,4 +1,4 @@
-package top.wujinxing.ch_2_basicjava.reflection.proxy;
+package top.wujinxing.ch_2_basicjava.proxy;
 
 /**
  * @author wujinxing
