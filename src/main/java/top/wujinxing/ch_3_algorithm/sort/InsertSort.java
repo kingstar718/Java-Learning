@@ -1,7 +1,5 @@
 package top.wujinxing.ch_3_algorithm.sort;
 
-import org.junit.Test;
-
 import java.util.Arrays;
 
 /**
@@ -15,14 +13,16 @@ import java.util.Arrays;
  * 5.将新元素插入到该位置后，
  * 6.重复步骤2-5
  */
-public class Insertion_Sort {
+public class InsertSort {
 
     public static void insertionSort1(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
-            int temp = arr[i];      //取出下一个元素，在已经排序的元素序列中从后向前扫描
+            //取出下一个元素，在已经排序的元素序列中从后向前扫描
+            int temp = arr[i];
             for (int j = i; j >= 0; j--) {
                 if (j > 0 && arr[j - 1] > temp) {
-                    arr[j] = arr[j - 1];    //如果该元素大于已排序的元素，则将该元素移到下一位置
+                    //如果该元素大于已排序的元素，则将该元素移到下一位置
+                    arr[j] = arr[j - 1];
                     System.out.println("Sorting: " + Arrays.toString(arr));
                 } else {
                     arr[j] = temp;
@@ -36,8 +36,9 @@ public class Insertion_Sort {
     public static void insertionSort2(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = i + 1; j > 0; j--) {
-                if (arr[j - 1] <= arr[j])
+                if (arr[j - 1] <= arr[j]) {
                     break;
+                }
                 int temp = arr[j];
                 arr[j] = arr[j - 1];
                 arr[j - 1] = temp;
@@ -47,29 +48,32 @@ public class Insertion_Sort {
     }
 
     public static void insertionSort3(int[] a, int n) {
-        if (n <= 1) return;
-
+        if (n <= 1) {
+            return;
+        }
         for (int i = 1; i < n; i++) {
             int value = a[i];
             int j = i - 1;
             // 查找插入的位置
             for (; j >= 0; --j) {
                 if (a[j] > value) {
-                    a[j + 1] = a[j]; // 数据移动
+                    // 数据移动
+                    a[j + 1] = a[j];
                 } else {
                     break;
                 }
             }
-            a[j + 1] = value; // 插入数据
+            // 插入数据
+            a[j + 1] = value;
         }
         System.out.println(Arrays.toString(a));
     }
 
-    @Test
-    public void Test() {
+
+    public static void main(String[] args) {
         int[] arr = {11, 1, 4, 5, 7, 9, 6, 2, 3, 45, 68, 44, 55, 777, 45};
-        //insertionSort1(arr);
-        //insertionSort2(arr);
+        insertionSort1(Arrays.copyOf(arr, arr.length));
+        insertionSort2(Arrays.copyOf(arr, arr.length));
         insertionSort3(arr, arr.length);
     }
 }

@@ -1,6 +1,5 @@
 package top.wujinxing.ch_3_algorithm.sort;
 
-import org.junit.Test;
 
 /**
  * @author wujinxing
@@ -10,8 +9,8 @@ import org.junit.Test;
  * 2.分区过程中，比该数大的全放到右边，小于等于该数的全放在左边
  * 3.在对左右区间重复第二步，直到个区间只有一个数
  */
-public class Quick_Sort {
-    //打印数组
+public class QuickSort {
+
     private static void printArr(int[] arr) {
         for (int a : arr) {
             System.out.print(a + " ");
@@ -28,8 +27,8 @@ public class Quick_Sort {
         }
         int left = low;
         int right = high;
-
-        int temp = arr[left]; //，坑1：保存基准的值
+        //坑1：保存基准的值
+        int temp = arr[left];
         while (left < right) {
             //坑2：从后往前找比基准值小的元素，插入到基准值的坑中
             while (left < right && arr[right] >= temp) {
@@ -49,8 +48,8 @@ public class Quick_Sort {
         quickSort(arr, left + 1, high);
     }
 
-    @Test
-    public void test() {
+
+    public static void main(String[] args) {
         int[] arr = {3, 4, 1, 2, 5, 7, 8, 12, 32, 12, 12, 33, 221, 0, 1};
         quickSort(arr, 0, arr.length - 1);
     }

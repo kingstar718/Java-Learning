@@ -1,6 +1,5 @@
 package top.wujinxing.ch_3_algorithm.sort;
 
-import org.junit.Test;
 
 import java.util.Arrays;
 
@@ -14,10 +13,12 @@ import java.util.Arrays;
  * 4.持续每次对越来越少的元素重复上面的步骤①~③，直到没有任何一对数字需要比较。
  * 时间复杂度为n+n-1+n-2+...+2+1--->n(n+1)/2--->O(n^2)
  */
-public class Bubble_Sort {
+public class BubbleSort {
     public static void bubbleSort(int[] arr) {
-        for (int i = arr.length; i > 0; i--) {    //外层循环移动游标
-            for (int j = 0; j < i && (j + 1) < i; j++) {   //内层循环遍历游标及之后（或之前）的元素
+        //外层循环移动游标
+        for (int i = arr.length; i > 0; i--) {
+            //内层循环遍历游标及之后（或之前）的元素
+            for (int j = 0; j < i && (j + 1) < i; j++) {
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
@@ -29,25 +30,31 @@ public class Bubble_Sort {
         }
     }
 
-    public void bubbleSort2(int[] a, int n) {
-        if (n <= 1) return;
-
+    public static void bubbleSort2(int[] a, int n) {
+        if (n <= 1) {
+            return;
+        }
         for (int i = 0; i < n; i++) {
-            boolean flag = false;  // 提前退出冒泡循环的标志位
+            // 提前退出冒泡循环的标志位
+            boolean flag = false;
             for (int j = 0; j < n - i - 1; j++) {
-                if (a[j] > a[j + 1]) { // 交换
+                if (a[j] > a[j + 1]) {
+                    // 交换
                     int temp = a[j];
                     a[j] = a[j + 1];
                     a[j + 1] = temp;
-                    flag = true; // 提前退出
+                    // 提前退出
+                    flag = true;
                 }
             }
-            if (!flag) break;  // 表示没有数据交换，提前退出
+            // 表示没有数据交换，提前退出
+            if (!flag) {
+                break;
+            }
         }
     }
 
-    @Test
-    public void test() {
+    public static void main(String[] args) {
         int[] a = {2, 3, 5, 4, 1, 55, 23, 45, 21, 2, 3, 9};
         bubbleSort(a);
         int[] a2 = {2, 3, 5, 4, 1, 55, 23, 45, 21, 2, 3, 9};
