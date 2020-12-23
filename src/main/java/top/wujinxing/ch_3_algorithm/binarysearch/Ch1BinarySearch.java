@@ -9,7 +9,7 @@ import org.junit.Test;
  *
  * 默认查找的顺序表均为递增
  */
-public class ch_1_BinarySearch {
+public class Ch1BinarySearch {
 
     @Test
     public void test(){
