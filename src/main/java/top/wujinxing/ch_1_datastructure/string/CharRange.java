@@ -7,16 +7,19 @@ import java.util.Random;
  * date 2019/9/24 13:13
  * description ASCII 字符集
  */
-public class ch_3_char_range {
+public class CharRange {
 
     public static void main(String[] args) {
-        char a = '\u0061'; //向 char 类型的 a 变量赋值为 A，所对应的 ASCII 值为 65
-        char b = 'B';    // 向 char 类型的 b 变量赋值为 B，所对应的 ASCII 值为 66
+        //向 char 类型的 a 变量赋值为 A，所对应的 ASCII 值为 65
+        char a = '\u0061';
+        // 向 char 类型的 b 变量赋值为 B，所对应的 ASCII 值为 66
+        char b = 'B';
         System.out.println("A 的 ASCII 值与 B 的 ASCII 值相加结果为：" + (a + b));
         char z = '\u007A';
         char A = '\u0041';
         char Z = '\u005A';
-        int aNum = a; //直接是十进制的数值，表示ASCII中该字符的位置
+        //直接是十进制的数值，表示ASCII中该字符的位置
+        int aNum = a;
         System.out.println(a + " " + A); // a A
         System.out.println(z + " " + Z); // z Z
         System.out.println(aNum); //97
