@@ -3,14 +3,14 @@ package top.wujinxing.ch_2_basicjava.basictype;
 import org.junit.Test;
 
 /**
- * @author  wujinxing
+ * @author wujinxing
  * date: 2019/1/2 19:53
  * description:装箱与拆箱
  */
 public class ch_07_IntAndInteger {
 
     @Test
-    public void test(){
+    public void test() {
         int a = 1;
         int b = a;
         Integer m = new Integer(1);

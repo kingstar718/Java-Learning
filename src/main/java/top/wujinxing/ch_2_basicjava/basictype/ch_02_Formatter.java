@@ -1,4 +1,5 @@
 package top.wujinxing.ch_2_basicjava.basictype;
+
 import java.util.Calendar;
 
 /**
@@ -10,10 +11,11 @@ public class ch_02_Formatter {
     public static void main(String[] args) {
         formatter();
     }
-    private static void formatter(){
+
+    private static void formatter() {
         String firstName = "John";
         String lastName = "Adams";
-        System.out.format("First Name: %s. and Last Name:  %s.",firstName,lastName);
+        System.out.format("First Name: %s. and Last Name:  %s.", firstName, lastName);
         System.out.println();
         System.out.println(String.format("First Name: %s. and Last Name:  %s.", firstName, lastName));
 

@@ -10,7 +10,9 @@ import java.util.Date;
  * description:
  */
 public class ch_04_Date {
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
+
         String pattern = "MM/dd/yyyy";
         SimpleDateFormat format = new SimpleDateFormat(pattern);
         try {
@@ -22,5 +24,6 @@ public class ch_04_Date {
         }
         System.out.println(format.format(new Date()));
         System.out.println(new Date());
+
     }
 }
