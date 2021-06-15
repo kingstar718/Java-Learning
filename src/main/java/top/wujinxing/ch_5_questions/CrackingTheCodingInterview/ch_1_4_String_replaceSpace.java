@@ -19,12 +19,13 @@ public class ch_1_4_String_replaceSpace {
 
     public static void main(String[] args) {
         System.out.println(replaceSpace("Mr John Smith", 13));
+        System.out.println(replaceSpace("Hello  World", 12));
     }
 
     private static String replaceSpace(String iniString, int length) {
         if (iniString==null || iniString.length()<=0 || length<=0) return iniString;
 
-        StringBuffer s = new StringBuffer();
+        StringBuilder s = new StringBuilder();
         for (int i=0; i<length; i++){
             char c = iniString.charAt(i);
             if (c==' ')
