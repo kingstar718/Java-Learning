@@ -3,6 +3,7 @@ package top.wujinxing.ch_5_questions.SwordOffer;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 /**
@@ -16,25 +17,23 @@ import java.util.Stack;
  */
 public class ch_03_printListFromTailToHead {
 
-    private ArrayList<Integer> res;
-
     //递归实现
-    private ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
-        res = new ArrayList<>();
-        rec(listNode);
+    private List<Integer> printListFromTailToHead(ListNode listNode) {
+        List<Integer> res = new ArrayList<>();
+        rec(listNode, res);
         return res;
     }
 
-    private void rec(ListNode cur) {
+    private void rec(ListNode cur, List<Integer> list) {
         if (cur == null) {//递归终止条件
             return;
         }
-        rec(cur.next);
-        res.add(cur.val);
+        rec(cur.next, list);
+        list.add(cur.val);
     }
 
     //栈实现
-    private ArrayList<Integer> printListFromTailToHead2(ListNode listNode) {
+    private List<Integer> printListFromTailToHead2(ListNode listNode) {
         Stack<Integer> stack = new Stack<>();
         ListNode cur = listNode;
         while (cur != null) {

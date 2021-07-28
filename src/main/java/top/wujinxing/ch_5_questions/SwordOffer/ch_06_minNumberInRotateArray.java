@@ -24,13 +24,15 @@ public class ch_06_minNumberInRotateArray {
     }
 
     private static int minNumberInRotateArray(int[] array) {
-        if (array.length == 0)
+        if (array.length == 0) {
             return 0;
+        }
 
         int left = 0, right = array.length - 1;
         while (left < right) {
             int m = left + (right - left) / 2;
-            if (array[m] <= array[right]) { //解在left-m之间
+            //解在left-m之间
+            if (array[m] <= array[right]) {
                 right = m;
             } else { // 解在m+1-right之间
                 left = m + 1;

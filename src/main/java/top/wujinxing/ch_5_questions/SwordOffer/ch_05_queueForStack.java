@@ -26,15 +26,15 @@ public class ch_05_queueForStack {
      * 2、stack2为空时，一次性将stack1的全部push到stack2中
      * 3、pop时，取得就是stack2的栈顶
      */
-    static class Q{
-        Stack<Integer> stack1= new Stack<>();
-        Stack<Integer> stack2= new Stack<>();
+    static class Q {
+        Stack<Integer> stack1 = new Stack<>();
+        Stack<Integer> stack2 = new Stack<>();
 
         public void push(int node){
             stack1.push(node);
         }
-        public int pop(){
-            if (stack1.isEmpty()&&stack2.isEmpty())
+        public int pop() {
+            if (stack1.isEmpty() && stack2.isEmpty())
                 throw new RuntimeException("isEmpty");
             //stack2不为空的话，先不要将stack1的内容放进去
             if (stack2.isEmpty()){
