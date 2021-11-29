@@ -1,5 +1,8 @@
 package top.wujinxing.ch_2_basicjava.reflect;
 
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
+
 import java.beans.IntrospectionException;
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.Field;
@@ -29,7 +32,9 @@ import java.lang.reflect.Method;
  * @author wujinxing
  * @since 2019/5/13
  */
+@Slf4j
 public class ReflectDemo3 {
+
     public static void main(String[] args) throws IntrospectionException, InvocationTargetException, IllegalAccessException {
         Person person = new Person("Curry", 30);
         Class clazz = person.getClass();
@@ -42,6 +47,18 @@ public class ReflectDemo3 {
             Object value = method.invoke(person);
 
             System.out.println(key + " : " + value);
+        }
+    }
+
+    @Test
+    public void testForName() {
+        try {
+            Class clazz = Class.forName("top.wujinxing.ch_2_basicjava.reflect.TestObject");
+            Object o = clazz.newInstance();
+            TestObject testObject = (TestObject) o;
+            log.info("new instance: {}", testObject);
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
+            log.error("test for name error: ", e);
         }
 
     }
