@@ -23,5 +23,7 @@ public class Ch206ReverseList {
     public void test() {
         ListNode l1 = new ListNode(1, 2, 3, 4, 5, 6, 7, 8, 9);
         System.out.println(l1);
+        ListNode l2 = reverseList(l1);
+        System.out.println(l2);
     }
 }
