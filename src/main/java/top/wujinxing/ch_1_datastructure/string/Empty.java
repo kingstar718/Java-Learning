@@ -1,20 +1,23 @@
 package top.wujinxing.ch_1_datastructure.string;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
 /**
  * @author wujinxing
  * @date 2022-07-18
  */
-public class ch_4_empty {
+@Slf4j
+public class Empty {
 
     public static void main(String[] args) {
-        System.out.println('\u00ad');
+
+        log.info("'\u00ad': {}", '\u00ad');
         String s = "fdfda发达-发达萨芬-发达发神经";
         String chs1 = chs(s);
         String  chs2 = StringUtils.remove(s, "-");
-        System.out.println(chs1);
-        System.out.println(chs2);
+        log.info("chs1: {}", chs1);
+        log.info("chs2: {}", chs2);
 
     }
 
