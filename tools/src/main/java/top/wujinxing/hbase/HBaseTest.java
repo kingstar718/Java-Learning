@@ -6,7 +6,7 @@ import org.apache.hadoop.hbase.*;
 import org.apache.hadoop.hbase.client.*;
 import org.apache.hadoop.hbase.filter.*;
 import org.apache.hadoop.hbase.util.Bytes;
-import org.apache.log4j.BasicConfigurator;
+//import org.apache.log4j.BasicConfigurator;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -34,7 +34,7 @@ public class HBaseTest {
 
     @Before
     public void connect() {
-        BasicConfigurator.configure();
+        //BasicConfigurator.configure();
         String quorum = "localhost";
         String clientPort = "2181";
         conf = HBaseConfiguration.create();
