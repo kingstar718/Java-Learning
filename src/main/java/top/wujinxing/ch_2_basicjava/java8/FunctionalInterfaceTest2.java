@@ -8,11 +8,10 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 /**
- * @author: wujinxing
- * @date: 2019/3/17 20:32
- * @description:
+ * @author wujinxing
+ * @date 2019/3/17 20:32
  */
-public class Test6_FunctionalInterface {
+public class FunctionalInterfaceTest2 {
 
     public static void main(String[] args){
         //Predicate是一个布尔类型的函数，该函数只有一个输入参数。

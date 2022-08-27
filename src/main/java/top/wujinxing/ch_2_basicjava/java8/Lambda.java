@@ -1,16 +1,20 @@
 package top.wujinxing.ch_2_basicjava.java8;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 /**
- * @author: wujinxing
- * @date: 2019/3/16 20:49
- * @description: Lambda表达式
+ * Lambda表达式
+ *
+ * @author wujinxing
+ * @date 2019/3/16 20:49
  */
-public class Test2_lambda {
+@Slf4j
+public class Lambda {
 
     public static void main(String[] args){
         List<String> names = Arrays.asList("peter","anna","mike","xenia");
@@ -35,6 +39,7 @@ public class Test2_lambda {
 
         Collections.sort(names,(a, b)->b.compareTo(a));
 
-        System.out.println(names);
+        log.info("name: {}", names);
+
     }
 }
