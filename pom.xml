@@ -16,9 +16,16 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <hbase.version>1.4.9</hbase.version>
+        <reactor.version>3.4.18</reactor.version>
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-core</artifactId>
+            <version>${reactor.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>io.vavr</groupId>
