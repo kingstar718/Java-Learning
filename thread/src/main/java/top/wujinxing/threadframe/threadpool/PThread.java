@@ -1,27 +1,29 @@
 package top.wujinxing.threadframe.threadpool;
 
 /**
- * @author: wujinxing
- * @date: 2019/3/26 22:57
- * @description: 一个永不退出的线程与线程池配合
+ * @author wujinxing
+ * @date 2019/3/26 22:57
+ *
+ * 一个永不退出的线程与线程池配合
  */
-public class PThread extends Thread{
+public class PThread extends Thread {
 
-    //线程池
+    /** 线程池 */
     private ThreadPool pool;
 
-    //任务
+    /** 任务 */
     private Runnable target;
     private boolean isShutDown = false;
     private boolean isIdle = false;
 
-    //构造函数
-    public PThread(Runnable target, String name, ThreadPool pool){
+    /** 构造函数 */
+    public PThread(Runnable target, String name, ThreadPool pool) {
         super(name);
         this.pool = pool;
         this.target = target;
     }
-    public Runnable getTarget(){
+
+    public Runnable getTarget() {
         return target;
     }
 
@@ -32,9 +34,9 @@ public class PThread extends Thread{
     @Override
     public void run() {
         //只要没有关闭,则一直不结束该线程
-        while (!isShutDown){
+        while (!isShutDown) {
             isIdle = false;
-            if (target!=null){
+            if (target != null) {
                 //运行任务
                 target.run();
             }
@@ -43,7 +45,7 @@ public class PThread extends Thread{
             try {
                 //该任务结束后,不结束线程,而是放入线程池空闲队列
                 pool.repool(this);
-                synchronized (this){
+                synchronized (this) {
                     //线程空闲,等待新的任务到来
                     wait();
                 }
@@ -54,14 +56,16 @@ public class PThread extends Thread{
         }
     }
 
-    public synchronized void setTarget(Runnable newTarget){
+    public synchronized void setTarget(Runnable newTarget) {
         target = newTarget;
         //设置了任务之后,通知run方法,开始执行这个任务
         notifyAll();
     }
-    //关闭线程
-    public synchronized void shutDown(){
+
+    /** 关闭线程 */
+    public synchronized void shutDown() {
         isShutDown = true;
         notifyAll();
     }
+
 }
