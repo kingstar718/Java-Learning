@@ -1,7 +1,6 @@
 package top.wujinxing.vavr;
 
 import io.vavr.concurrent.Future;
-import lombok.var;
 import org.junit.Assert;
 import org.junit.Test;
 
