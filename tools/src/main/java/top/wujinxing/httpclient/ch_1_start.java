@@ -1,128 +1,44 @@
 package top.wujinxing.httpclient;
 
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpEntity;
+import org.apache.http.HttpStatus;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
-import java.io.IOException;
-import java.util.*;
-
 /**
  * @author wujinxing
  * date 2019/4/24 16:17
  * description
  */
+@Slf4j
 public class ch_1_start {
 
     public static void main(String[] args) {
-        //创建httpClient对象
-        CloseableHttpClient httpClient = HttpClients.createDefault();
-        //创建httpGEt
-        String url = "https://tcc.taobao.com/cc/json/mobile_tel_segment.htm?tel=18888888888";
+       requestPhone(18819332400L);
+    }
+
+    public static void requestPhone(Long phoneNum) {
+        String phoneUrl = "https://api.vvhan.com/api/phone?tel=";
+        String url = phoneUrl + phoneNum;
         HttpGet httpGet = new HttpGet(url);
-        try (CloseableHttpResponse response = httpClient.execute(httpGet)) {
+        try (CloseableHttpClient httpClient = HttpClients.createDefault();
+             CloseableHttpResponse response = httpClient.execute(httpGet)) {
             HttpEntity httpEntity = response.getEntity();
+            int statusCode = response.getStatusLine().getStatusCode();
             String responseStr = EntityUtils.toString(httpEntity);
-            System.out.println(responseStr);
-            TelResult result = new TelResult();
-            String[] strings = responseStr.split(",");
-            Deque<String> list = new LinkedList<>();
-            for (String s: strings){
-                list.offer(s.split(":")[1].split("'")[1]);
+            if (HttpStatus.SC_OK == statusCode) {
+                log.info("请求成功, status: {}, entity: {}", statusCode, responseStr);
+            } else {
+                log.error("请求失败, url: {}, status: {}, content: {}", url, statusCode, responseStr);
             }
-            result.setMts(list.poll());
-            result.setProvince(list.poll());
-            result.setCatName(list.poll());
-            result.setTelString(list.poll());
-            result.setAreaVid(list.poll());
-            result.setIsVid(list.poll());
-            result.setCarrier(list.poll());
-            System.out.println(result.toString());
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            log.error("request phone error: ", e);
         }
     }
 
-    static class TelResult{
-        private String mts;
-        private String province;
-        private String catName;
-        private String telString;
-        private String areaVid;
-        private String isVid;
-        private String carrier;
-
-        public String getMts() {
-            return mts;
-        }
-
-        public void setMts(String mts) {
-            this.mts = mts;
-        }
-
-        public String getProvince() {
-            return province;
-        }
-
-        public void setProvince(String province) {
-            this.province = province;
-        }
-
-        public String getCatName() {
-            return catName;
-        }
-
-        public void setCatName(String catName) {
-            this.catName = catName;
-        }
-
-        public String getTelString() {
-            return telString;
-        }
-
-        public void setTelString(String telString) {
-            this.telString = telString;
-        }
-
-        public String getAreaVid() {
-            return areaVid;
-        }
-
-        public void setAreaVid(String areaVid) {
-            this.areaVid = areaVid;
-        }
-
-        public String getIsVid() {
-            return isVid;
-        }
-
-        public void setIsVid(String isVid) {
-            this.isVid = isVid;
-        }
-
-        public String getCarrier() {
-            return carrier;
-        }
-
-        public void setCarrier(String carrier) {
-            this.carrier = carrier;
-        }
-
-        @Override
-        public String toString() {
-            return "TelResult{" +
-                    "mts='" + mts + '\'' +
-                    ", province='" + province + '\'' +
-                    ", catName='" + catName + '\'' +
-                    ", telString='" + telString + '\'' +
-                    ", areaVid='" + areaVid + '\'' +
-                    ", isVid='" + isVid + '\'' +
-                    ", carrier='" + carrier + '\'' +
-                    '}';
-        }
-    }
 }
