@@ -1,14 +1,14 @@
 package top.wujinxing.leetcode.stack;
 
-import org.junit.Test;
-
+import java.util.Deque;
 import java.util.HashMap;
-import java.util.Stack;
+import java.util.LinkedList;
 
 /**
  * @author wujinxing
- * date 2019 2019/12/31 16:10
- * description 有效的括号
+ * @date 2019 2019/12/31 16:10
+ * <p>
+ * 有效的括号
  * <p>
  * 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
  * <p>
@@ -18,11 +18,11 @@ import java.util.Stack;
  * <p>
  * 注意空字符串可被认为是有效字符串。
  */
-public class ch_20_ValidParentheses {
+public class Ch20ValidParentheses {
 
     private HashMap<Character, Character> mappings;
 
-    public ch_20_ValidParentheses() {
+    public Ch20ValidParentheses() {
         this.mappings = new HashMap<>();
         this.mappings.put(')', '(');
         this.mappings.put(']', '[');
@@ -30,12 +30,9 @@ public class ch_20_ValidParentheses {
     }
 
     public boolean isValid(String s) {
-
-        Stack<Character> stack = new Stack<>();
-
+        Deque<Character> stack = new LinkedList<>();
         // 采取对应一对就删除一对的方法
         for (int i = 0; i < s.length(); i++) {
-
             char c = s.charAt(i);
             // 先判断字符是否是括号中的后半部分，不是则直接压栈
             if (mappings.containsKey(c)) {
@@ -52,24 +49,23 @@ public class ch_20_ValidParentheses {
         return stack.isEmpty();
     }
 
-    public boolean isValid2(String s){
-        Stack<Character> stack = new Stack<>();
-        for (char c: s.toCharArray()){
-            if (c == '(') stack.push(')');
-            else if (c == '{') stack.push('}');
-            else if (c == '[') stack.push(']');
-            else if ((stack.isEmpty() || stack.pop() != c)) return false;
+    /**
+     * 方法很取巧，因为知道优先情况
+     */
+    public boolean isValid2(String s) {
+        Deque<Character> stack = new LinkedList<>();
+        for (char c : s.toCharArray()) {
+            if (c == '(') {
+                stack.push(')');
+            } else if (c == '{') {
+                stack.push('}');
+            } else if (c == '[') {
+                stack.push(']');
+            } else if ((stack.isEmpty() || stack.pop() != c)) {
+                return false;
+            }
         }
         return stack.isEmpty();
     }
 
-    @Test
-    public void test(){
-        String s1 = "((({[]})))[]{[]}";
-        String s2 = "((({[]})))[]{[[]}";
-        System.out.println(isValid(s1));
-        System.out.println(isValid(s2));
-        System.out.println(isValid2(s1));
-        System.out.println(isValid2(s2));
-    }
 }

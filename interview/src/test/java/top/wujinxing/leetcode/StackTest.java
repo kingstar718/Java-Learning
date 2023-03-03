@@ -2,6 +2,8 @@ package top.wujinxing.leetcode;
 
 import org.junit.Assert;
 import org.junit.Test;
+import top.wujinxing.leetcode.stack.Ch1047RemoveAllAdjacentDuplicatesInString;
+import top.wujinxing.leetcode.stack.Ch20ValidParentheses;
 import top.wujinxing.leetcode.stack.Ch225ImplementStackUsingQueues;
 
 /**
@@ -32,6 +34,21 @@ public class StackTest {
         Assert.assertFalse(twoQueue.empty());
         Assert.assertEquals(1, twoQueue.pop());
         Assert.assertTrue(twoQueue.empty());
+    }
+
+    @Test
+    public void validParentheses() {
+        String s1 = "((({[]})))[]{[]}";
+        String s2 = "((({[]})))[]{[[]}";
+        Assert.assertTrue(new Ch20ValidParentheses().isValid(s1));
+        Assert.assertFalse(new Ch20ValidParentheses().isValid(s2));
+        Assert.assertTrue(new Ch20ValidParentheses().isValid2(s1));
+        Assert.assertFalse(new Ch20ValidParentheses().isValid2(s2));
+    }
+
+    @Test
+    public void removeDuplicates() {
+        Assert.assertEquals("ca", Ch1047RemoveAllAdjacentDuplicatesInString.removeDuplicates("abbaca"));
     }
 
 }
