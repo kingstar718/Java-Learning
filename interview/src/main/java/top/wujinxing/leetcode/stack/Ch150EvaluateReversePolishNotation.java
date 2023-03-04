@@ -28,7 +28,7 @@ public class Ch150EvaluateReversePolishNotation {
                 if ("+".equals(s)) {
                     stack.push(num1 + num2);
                 } else if ("-".equals(s)) {
-                    stack.push(num1 - num2);
+                    stack.push(num2 - num1);
                 } else if ("*".equals(s)) {
                     stack.push(num1 * num2);
                 } else if ("/".equals(s)) {
