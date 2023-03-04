@@ -3,6 +3,7 @@ package top.wujinxing.leetcode;
 import org.junit.Assert;
 import org.junit.Test;
 import top.wujinxing.leetcode.stack.Ch1047RemoveAllAdjacentDuplicatesInString;
+import top.wujinxing.leetcode.stack.Ch150EvaluateReversePolishNotation;
 import top.wujinxing.leetcode.stack.Ch20ValidParentheses;
 import top.wujinxing.leetcode.stack.Ch225ImplementStackUsingQueues;
 
@@ -49,6 +50,16 @@ public class StackTest {
     @Test
     public void removeDuplicates() {
         Assert.assertEquals("ca", Ch1047RemoveAllAdjacentDuplicatesInString.removeDuplicates("abbaca"));
+    }
+
+    @Test
+    public void evalRPN() {
+        Assert.assertEquals(9, Ch150EvaluateReversePolishNotation
+                .evalRPN(new String[]{"2", "1", "+", "3", "*" }));
+        Assert.assertEquals(6, Ch150EvaluateReversePolishNotation
+                .evalRPN(new String[]{"4", "13", "5", "/", "+" }));
+        Assert.assertEquals(22, Ch150EvaluateReversePolishNotation
+                .evalRPN(new String[]{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+" }));
     }
 
 }
