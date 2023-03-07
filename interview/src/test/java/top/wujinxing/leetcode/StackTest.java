@@ -2,10 +2,7 @@ package top.wujinxing.leetcode;
 
 import org.junit.Assert;
 import org.junit.Test;
-import top.wujinxing.leetcode.stack.Ch1047RemoveAllAdjacentDuplicatesInString;
-import top.wujinxing.leetcode.stack.Ch150EvaluateReversePolishNotation;
-import top.wujinxing.leetcode.stack.Ch20ValidParentheses;
-import top.wujinxing.leetcode.stack.Ch225ImplementStackUsingQueues;
+import top.wujinxing.leetcode.stack.*;
 
 /**
  * @author wujinxing
@@ -60,6 +57,22 @@ public class StackTest {
                 .evalRPN(new String[]{"4", "13", "5", "/", "+" }));
         Assert.assertEquals(22, Ch150EvaluateReversePolishNotation
                 .evalRPN(new String[]{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+" }));
+    }
+
+    @Test
+    public void removeKDigits() {
+        Assert.assertEquals("1219", Ch402RemoveKDigits
+                .removeKdigits("1432219", 3));
+        Assert.assertEquals("200", Ch402RemoveKDigits
+                .removeKdigits("10200", 1));
+        Assert.assertEquals("0", Ch402RemoveKDigits
+                .removeKdigits("10", 2));
+        Assert.assertEquals("1219", Ch402RemoveKDigits
+                .removeKdigits2("1432219", 3));
+        Assert.assertEquals("200", Ch402RemoveKDigits
+                .removeKdigits2("10200", 1));
+        Assert.assertEquals("0", Ch402RemoveKDigits
+                .removeKdigits2("10", 2));
     }
 
 }
