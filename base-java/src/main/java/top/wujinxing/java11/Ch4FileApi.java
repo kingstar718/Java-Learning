@@ -2,7 +2,6 @@ package top.wujinxing.java11;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -12,7 +11,7 @@ import java.nio.file.Path;
  * @date 2022-09-23
  */
 @Slf4j
-public class FileApiDemo {
+public class Ch4FileApi {
 
     public static void main(String[] args) throws IOException {
         // 创建临时文件

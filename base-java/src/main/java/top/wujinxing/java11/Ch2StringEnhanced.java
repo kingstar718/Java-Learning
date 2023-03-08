@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
  * @date 2022-09-24
  */
 @Slf4j
-public class StringDemo {
+public class Ch2StringEnhanced {
 
     public static void main(String[] args) {
         String blank = "    ";

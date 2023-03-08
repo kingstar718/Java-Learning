@@ -13,7 +13,7 @@ import java.net.http.HttpResponse;
  * @date 2022-09-23
  */
 @Slf4j
-public class HttpClientApiDemo {
+public class Ch8HttpClientApi {
 
     public static void main(String[] args) throws IOException, InterruptedException {
         HttpClient client = HttpClient.newHttpClient();
@@ -26,7 +26,7 @@ public class HttpClientApiDemo {
         //异步
         client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
                 .thenApply(HttpResponse::body)
-                .thenAccept(System.out::println)
+                .thenAccept(s -> log.info("then accept: {}", s))
                 .join();
     }
 
