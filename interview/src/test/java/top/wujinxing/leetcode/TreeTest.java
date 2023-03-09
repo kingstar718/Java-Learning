@@ -3,10 +3,7 @@ package top.wujinxing.leetcode;
 import com.google.common.collect.Lists;
 import org.junit.Assert;
 import org.junit.Test;
-import top.wujinxing.leetcode.tree.Ch_144_BinaryTreePreorderTraversal;
-import top.wujinxing.leetcode.tree.Ch_145_BinaryTreePostorderTraversal;
-import top.wujinxing.leetcode.tree.Ch_94_BinaryTreeInorderTraversal;
-import top.wujinxing.leetcode.tree.TreeNode;
+import top.wujinxing.leetcode.tree.*;
 
 import java.util.List;
 
@@ -52,6 +49,19 @@ public class TreeTest {
                 .postOrderTraversal3(root));
         Assert.assertEquals(List.of(3, 2, 1), Ch_145_BinaryTreePostorderTraversal
                 .postOrderTraversal4(root));
+    }
+
+    @Test
+    public void levelOrder() {
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.left.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+        Assert.assertEquals(List.of(List.of(3), List.of(9, 20), List.of(15, 7)),
+                Ch_102_BinaryTreeLevelOrderTraversal.levelOrder(root));
+        Assert.assertEquals(List.of(List.of(3), List.of(9, 20), List.of(15, 7)),
+                Ch_102_BinaryTreeLevelOrderTraversal.levelOrder2(root));
     }
 
 }

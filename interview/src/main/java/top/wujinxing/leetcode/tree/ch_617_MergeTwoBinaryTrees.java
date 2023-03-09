@@ -91,8 +91,8 @@ public class ch_617_MergeTwoBinaryTrees {
         t2.right = new TreeNode(3);
         t2.left.right = new TreeNode(4);
         t2.right.right = new TreeNode(7);
-        ch_102_BinaryTreeLevelOrderTraversal out = new ch_102_BinaryTreeLevelOrderTraversal();
+        //Ch_102_BinaryTreeLevelOrderTraversal out = new Ch_102_BinaryTreeLevelOrderTraversal();
         //System.out.println(out.levelOrder(mergeTrees(t1, t2)).toString());
-        System.out.println(out.levelOrder(mergeTrees2(t1, t2)).toString());
+        //System.out.println(out.levelOrder(mergeTrees2(t1, t2)).toString());
     }
 }
