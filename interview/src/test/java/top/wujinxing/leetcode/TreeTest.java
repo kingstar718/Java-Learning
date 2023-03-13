@@ -98,4 +98,14 @@ public class TreeTest {
                 Ch_107_BinaryTreeLevelOrderTraversalII.levelOrderBottom(root));
     }
 
+    @Test
+    public void rightSideView() {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.right = new TreeNode(5);
+        root.right.right = new TreeNode(4);
+        Assert.assertEquals(List.of(1, 3, 4), Ch_199_BinaryTreeRightSideView.rightSideView(root));
+    }
+
 }
