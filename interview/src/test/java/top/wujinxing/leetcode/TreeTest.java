@@ -64,4 +64,14 @@ public class TreeTest {
                 Ch_102_BinaryTreeLevelOrderTraversal.levelOrder2(root));
     }
 
+    @Test
+    public void levelOrder2() {
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+        Assert.assertArrayEquals(new int[]{3, 9, 20, 15, 7}, Ch_32_SwordOffer_LevelOrder.levelOrder(root));
+    }
+
 }
