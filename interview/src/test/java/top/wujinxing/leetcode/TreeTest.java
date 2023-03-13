@@ -74,4 +74,28 @@ public class TreeTest {
         Assert.assertArrayEquals(new int[]{3, 9, 20, 15, 7}, Ch_32_SwordOffer_LevelOrder.levelOrder(root));
     }
 
+    @Test
+    public void levelOrder3() {
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+        Assert.assertEquals(List.of(List.of(3), List.of(20, 9), List.of(15, 7)).toString(),
+                Ch_32_SwordOffer_LevelOrder_III.levelOrder3(root).toString());
+        Assert.assertEquals(List.of(List.of(3), List.of(20, 9), List.of(15, 7)).toString(),
+                Ch_32_SwordOffer_LevelOrder_III.levelOrder3_2(root).toString());
+    }
+
+    @Test
+    public void levelOrderBottom() {
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+        Assert.assertEquals(List.of(List.of(15, 7), List.of(9, 20), List.of(3)),
+                Ch_107_BinaryTreeLevelOrderTraversalII.levelOrderBottom(root));
+    }
+
 }
