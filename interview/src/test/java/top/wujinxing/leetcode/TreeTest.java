@@ -108,4 +108,15 @@ public class TreeTest {
         Assert.assertEquals(List.of(1, 3, 4), Ch_199_BinaryTreeRightSideView.rightSideView(root));
     }
 
+    @Test
+    public void averageLevels() {
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.left.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+        Assert.assertEquals(List.of(3.0, 14.5, 11.0), Ch_637_AverageOfLevelsInBinaryTree.averageOfLevels(root));
+    }
+
+
 }
