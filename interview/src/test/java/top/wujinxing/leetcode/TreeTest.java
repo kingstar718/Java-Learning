@@ -118,5 +118,18 @@ public class TreeTest {
         Assert.assertEquals(List.of(3.0, 14.5, 11.0), Ch_637_AverageOfLevelsInBinaryTree.averageOfLevels(root));
     }
 
+    @Test
+    public void isSymmetric() {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(2);
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(4);
+        root.right.left = new TreeNode(4);
+        root.right.right = new TreeNode(3);
+        Assert.assertTrue(Ch_101_SymmetricTree.isSymmetric(root));
+        Assert.assertTrue(Ch_101_SymmetricTree.isSymmetric2(root));
+    }
+
 
 }
