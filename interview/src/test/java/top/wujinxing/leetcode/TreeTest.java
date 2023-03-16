@@ -131,5 +131,39 @@ public class TreeTest {
         Assert.assertTrue(Ch_101_SymmetricTree.isSymmetric2(root));
     }
 
+    @Test
+    public void countNodes() {
+        TreeNode root = TreeUtils.generate(new int[]{1, 2, 3, 4, 5, 6});
+        TreeNode root2 = TreeUtils.generate(new int[]{});
+        TreeNode root3 = TreeUtils.generate(new int[]{1});
+        Assert.assertEquals(6, Ch_222_CountCompleteTreeNodes.countNodes(root));
+        Assert.assertEquals(0, Ch_222_CountCompleteTreeNodes.countNodes(root2));
+        Assert.assertEquals(1, Ch_222_CountCompleteTreeNodes.countNodes(root3));
+        Assert.assertEquals(6, Ch_222_CountCompleteTreeNodes.countNodes2(root));
+        Assert.assertEquals(0, Ch_222_CountCompleteTreeNodes.countNodes2(root2));
+        Assert.assertEquals(1, Ch_222_CountCompleteTreeNodes.countNodes2(root3));
+    }
+
+    @Test
+    public void isBalanced() {
+        TreeNode root = TreeUtils.generate(new Integer[]{3, 9, 20, null, null, 15, 7});
+        TreeNode root2 = TreeUtils.generate(new Integer[]{1, 2, 2, 3, 3, null, null, 4, 4});
+        Assert.assertTrue(Ch_110_Balanced_Binary_Tree.isBalanced(root));
+        Assert.assertFalse(Ch_110_Balanced_Binary_Tree.isBalanced(root2));
+        Assert.assertTrue(Ch_110_Balanced_Binary_Tree.isBalanced2(root));
+        Assert.assertFalse(Ch_110_Balanced_Binary_Tree.isBalanced2(root2));
+        TreeNode root3 = TreeUtils.generate(new Integer[]{0, 2, 4, 1, null, 3, -1, 5, 1, null, 6, null, 8});
+        Assert.assertFalse(Ch_110_Balanced_Binary_Tree.isBalanced(root3));
+        Assert.assertFalse(Ch_110_Balanced_Binary_Tree.isBalanced2(root3));
+    }
+
+
+    @Test
+    public void sumOfLeftLeaves() {
+        TreeNode root = TreeUtils.generate(new int[]{1, 2, 3, 4, 5, 6, 7});
+        TreeNode root2 = TreeUtils.generate(new Integer[]{3,9,20,null,null,15,7});
+        Assert.assertEquals(10, Ch_404_Sum_of_Left_Leaves.sumOfLeftLeaves(root));
+        Assert.assertEquals(24, Ch_404_Sum_of_Left_Leaves.sumOfLeftLeaves(root2));
+    }
 
 }
