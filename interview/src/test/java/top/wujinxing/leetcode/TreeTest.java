@@ -174,4 +174,10 @@ public class TreeTest {
         Assert.assertEquals(List.of("1->3", "1->2->5"), Ch_257_BinaryTreePaths.binaryTreePaths3(root));
     }
 
+    @Test
+    public void hasPathSum() {
+        TreeNode root = TreeUtils.generate(new Integer[]{5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1});
+        Assert.assertTrue(Ch_112_PathSum.hasPathSum(root, 22));
+    }
+
 }
