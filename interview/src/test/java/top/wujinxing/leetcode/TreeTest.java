@@ -180,4 +180,11 @@ public class TreeTest {
         Assert.assertTrue(Ch_112_PathSum.hasPathSum(root, 22));
     }
 
+    @Test
+    public void pathSum() {
+        // 二叉树的构建有问题
+        TreeNode root = TreeUtils.generate(new Integer[]{5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1});
+        Assert.assertEquals(List.of(List.of(5, 4, 11, 2), List.of(5, 8, 4, 5)), Ch_113_PathSumII.pathSum(root, 22));
+    }
+
 }
