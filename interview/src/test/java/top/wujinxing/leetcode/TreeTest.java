@@ -161,9 +161,17 @@ public class TreeTest {
     @Test
     public void sumOfLeftLeaves() {
         TreeNode root = TreeUtils.generate(new int[]{1, 2, 3, 4, 5, 6, 7});
-        TreeNode root2 = TreeUtils.generate(new Integer[]{3,9,20,null,null,15,7});
+        TreeNode root2 = TreeUtils.generate(new Integer[]{3, 9, 20, null, null, 15, 7});
         Assert.assertEquals(10, Ch_404_Sum_of_Left_Leaves.sumOfLeftLeaves(root));
         Assert.assertEquals(24, Ch_404_Sum_of_Left_Leaves.sumOfLeftLeaves(root2));
+    }
+
+    @Test
+    public void binaryTreePaths() {
+        TreeNode root = TreeUtils.generate(new Integer[]{1, 2, 3, null, 5});
+        Assert.assertEquals(List.of("1->2->5", "1->3"), Ch_257_BinaryTreePaths.binaryTreePaths(root));
+        Assert.assertEquals(List.of("1->2->5", "1->3"), Ch_257_BinaryTreePaths.binaryTreePaths2(root));
+        Assert.assertEquals(List.of("1->3", "1->2->5"), Ch_257_BinaryTreePaths.binaryTreePaths3(root));
     }
 
 }
