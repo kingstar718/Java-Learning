@@ -189,7 +189,12 @@ public class TreeTest {
     @Test
     public void pathSum3() {
         TreeNode root = TreeNode.deserialize("[10,5,-3,3,2,null,11,3,-2,null,1]");
+        TreeNode root2 = TreeNode.deserialize("[1,null,2,null,3,null,4,null,5]");
+        TreeNode root3 = TreeNode.deserialize("[1000000000,1000000000,null,294967296,null,1000000000,null,1000000000,null,1000000000]");
         Assert.assertEquals(3, Ch_437_PathSumIII.pathSum3(root, 8));
+        Assert.assertEquals(2, Ch_437_PathSumIII.pathSum3(root2, 3));
+        // 这个案例有问题
+        Assert.assertEquals(0, Ch_437_PathSumIII.pathSum3(root3,0));
     }
 
 }

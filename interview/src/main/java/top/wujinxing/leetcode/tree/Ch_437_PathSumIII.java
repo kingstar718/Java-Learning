@@ -14,28 +14,28 @@ package top.wujinxing.leetcode.tree;
  */
 public class Ch_437_PathSumIII {
 
-    static int result = 0;
-
     public static int pathSum3(TreeNode root, int targetSum) {
         if (root == null) {
             return 0;
         }
-        traversal(root, targetSum);
-        traversal(root.left, targetSum);
-        traversal(root.right, targetSum);
-        return result;
+        int ret = rootSum(root, targetSum);
+        ret += pathSum3(root.left, targetSum);
+        ret += pathSum3(root.right, targetSum);
+        return ret;
     }
 
-    private static void traversal(TreeNode root, int sum) {
+    public static int rootSum(TreeNode root, int targetSum) {
+        int ret = 0;
         if (root == null) {
-            return;
+            return 0;
         }
-        sum -= root.val;
-        if (sum == 0) {
-            result++;
+        int val = root.val;
+        if (val == targetSum) {
+            ret++;
         }
-        traversal(root.left, sum);
-        traversal(root.right, sum);
+        ret += rootSum(root.left, targetSum - val);
+        ret += rootSum(root.right, targetSum - val);
+        return ret;
     }
 
 }
