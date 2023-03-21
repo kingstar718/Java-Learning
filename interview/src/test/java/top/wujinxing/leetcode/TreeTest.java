@@ -133,9 +133,9 @@ public class TreeTest {
 
     @Test
     public void countNodes() {
-        TreeNode root = TreeUtils.generate(new int[]{1, 2, 3, 4, 5, 6});
-        TreeNode root2 = TreeUtils.generate(new int[]{});
-        TreeNode root3 = TreeUtils.generate(new int[]{1});
+        TreeNode root = TreeNode.deserialize(new int[]{1, 2, 3, 4, 5, 6});
+        TreeNode root2 = TreeNode.deserialize(new int[]{});
+        TreeNode root3 = TreeNode.deserialize(new int[]{1});
         Assert.assertEquals(6, Ch_222_CountCompleteTreeNodes.countNodes(root));
         Assert.assertEquals(0, Ch_222_CountCompleteTreeNodes.countNodes(root2));
         Assert.assertEquals(1, Ch_222_CountCompleteTreeNodes.countNodes(root3));
@@ -146,13 +146,13 @@ public class TreeTest {
 
     @Test
     public void isBalanced() {
-        TreeNode root = TreeUtils.generate(new Integer[]{3, 9, 20, null, null, 15, 7});
-        TreeNode root2 = TreeUtils.generate(new Integer[]{1, 2, 2, 3, 3, null, null, 4, 4});
+        TreeNode root = TreeNode.deserialize(new Integer[]{3, 9, 20, null, null, 15, 7});
+        TreeNode root2 = TreeNode.deserialize(new Integer[]{1, 2, 2, 3, 3, null, null, 4, 4});
         Assert.assertTrue(Ch_110_Balanced_Binary_Tree.isBalanced(root));
         Assert.assertFalse(Ch_110_Balanced_Binary_Tree.isBalanced(root2));
         Assert.assertTrue(Ch_110_Balanced_Binary_Tree.isBalanced2(root));
         Assert.assertFalse(Ch_110_Balanced_Binary_Tree.isBalanced2(root2));
-        TreeNode root3 = TreeUtils.generate(new Integer[]{0, 2, 4, 1, null, 3, -1, 5, 1, null, 6, null, 8});
+        TreeNode root3 = TreeNode.deserialize(new Integer[]{0, 2, 4, 1, null, 3, -1, 5, 1, null, 6, null, 8});
         Assert.assertFalse(Ch_110_Balanced_Binary_Tree.isBalanced(root3));
         Assert.assertFalse(Ch_110_Balanced_Binary_Tree.isBalanced2(root3));
     }
@@ -160,15 +160,15 @@ public class TreeTest {
 
     @Test
     public void sumOfLeftLeaves() {
-        TreeNode root = TreeUtils.generate(new int[]{1, 2, 3, 4, 5, 6, 7});
-        TreeNode root2 = TreeUtils.generate(new Integer[]{3, 9, 20, null, null, 15, 7});
+        TreeNode root = TreeNode.deserialize(new int[]{1, 2, 3, 4, 5, 6, 7});
+        TreeNode root2 = TreeNode.deserialize(new Integer[]{3, 9, 20, null, null, 15, 7});
         Assert.assertEquals(10, Ch_404_Sum_of_Left_Leaves.sumOfLeftLeaves(root));
         Assert.assertEquals(24, Ch_404_Sum_of_Left_Leaves.sumOfLeftLeaves(root2));
     }
 
     @Test
     public void binaryTreePaths() {
-        TreeNode root = TreeUtils.generate(new Integer[]{1, 2, 3, null, 5});
+        TreeNode root = TreeNode.deserialize(new Integer[]{1, 2, 3, null, 5});
         Assert.assertEquals(List.of("1->2->5", "1->3"), Ch_257_BinaryTreePaths.binaryTreePaths(root));
         Assert.assertEquals(List.of("1->2->5", "1->3"), Ch_257_BinaryTreePaths.binaryTreePaths2(root));
         Assert.assertEquals(List.of("1->3", "1->2->5"), Ch_257_BinaryTreePaths.binaryTreePaths3(root));
@@ -176,15 +176,20 @@ public class TreeTest {
 
     @Test
     public void hasPathSum() {
-        TreeNode root = TreeUtils.generate(new Integer[]{5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1});
+        TreeNode root = TreeNode.deserialize(new Integer[]{5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1});
         Assert.assertTrue(Ch_112_PathSum.hasPathSum(root, 22));
     }
 
     @Test
     public void pathSum() {
-        // 二叉树的构建有问题
-        TreeNode root = TreeUtils.generate(new Integer[]{5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1});
+        TreeNode root = TreeNode.deserialize(new Integer[]{5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1});
         Assert.assertEquals(List.of(List.of(5, 4, 11, 2), List.of(5, 8, 4, 5)), Ch_113_PathSumII.pathSum(root, 22));
+    }
+
+    @Test
+    public void pathSum3() {
+        TreeNode root = TreeNode.deserialize("[10,5,-3,3,2,null,11,3,-2,null,1]");
+        Assert.assertEquals(3, Ch_437_PathSumIII.pathSum3(root, 8));
     }
 
 }
