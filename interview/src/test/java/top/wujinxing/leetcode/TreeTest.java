@@ -194,7 +194,14 @@ public class TreeTest {
         Assert.assertEquals(3, Ch_437_PathSumIII.pathSum3(root, 8));
         Assert.assertEquals(2, Ch_437_PathSumIII.pathSum3(root2, 3));
         // 这个案例有问题
-        Assert.assertEquals(0, Ch_437_PathSumIII.pathSum3(root3,0));
+        Assert.assertEquals(0, Ch_437_PathSumIII.pathSum3(root3, 0));
+    }
+
+    @Test
+    public void buildTree() {
+        int[] inOrder = new int[]{9, 3, 15, 20, 7};
+        int[] postOrder = new int[]{9, 15, 7, 20, 3};
+        Assert.assertEquals("[3,9,20,null,null,15,7]", TreeNode.serialize(Ch_106_ConstructBinaryTreeFromInorderAndPostorderTraversal.buildTree(inOrder, postOrder)));
     }
 
 }
