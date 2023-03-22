@@ -204,4 +204,11 @@ public class TreeTest {
         Assert.assertEquals("[3,9,20,null,null,15,7]", TreeNode.serialize(Ch_106_ConstructBinaryTreeFromInorderAndPostorderTraversal.buildTree(inOrder, postOrder)));
     }
 
+    @Test
+    public void buildTree2() {
+        int[] preOrder = new int[]{3,9,20,15,7};
+        int[] inOrder = new int[]{9,3,15,20,7};
+        Assert.assertEquals("[3,9,20,null,null,15,7]", TreeNode.serialize(Ch_105_ConstructBinaryTreeFromPreOrderAndInorderTraversal.buildTree(preOrder, inOrder)));
+    }
+
 }

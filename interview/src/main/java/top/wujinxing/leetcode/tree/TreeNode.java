@@ -2,7 +2,9 @@ package top.wujinxing.leetcode.tree;
 
 import com.alibaba.fastjson.JSON;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 /**
@@ -76,22 +78,28 @@ public class TreeNode {
         if (root == null) {
             return EMPTY;
         }
-        StringBuilder res = new StringBuilder("[");
         Queue<TreeNode> queue = new LinkedList<>();
+        List<String> result = new ArrayList<>();
         queue.add(root);
         while (!queue.isEmpty()) {
             TreeNode node = queue.poll();
             if (node != null) {
-                res.append(node.val).append(",");
+                result.add(String.valueOf(node.val));
                 queue.add(node.left);
                 queue.add(node.right);
             } else {
-                res.append(NULL + ",");
+                result.add(NULL);
             }
         }
-        res.deleteCharAt(res.length() - 1);
-        res.append("]");
-        return res.toString();
+        int endIndex = result.size() - 1;
+        for (int i = result.size() - 1; i >= 0; i--) {
+            if (!NULL.equals(result.get(i))) {
+                endIndex = i + 1;
+                break;
+            }
+        }
+        result = result.subList(0, endIndex);
+        return result.toString().replace(" ", "");
     }
 
 }
