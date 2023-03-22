@@ -31,7 +31,7 @@ import java.util.Stack;
  * <p>
  * 链接：https://leetcode-cn.com/problems/merge-two-binary-trees
  */
-public class ch_617_MergeTwoBinaryTrees {
+public class Ch_617_MergeTwoBinaryTrees {
 
     /**
      * 对这两棵树同时进行前序遍历，并将对应的节点进行合并。
@@ -39,10 +39,10 @@ public class ch_617_MergeTwoBinaryTrees {
      * 如果其中有一棵树为空，那么我们返回另一颗树作为结果；
      * 如果两棵树均为空，此时返回任意一棵树均可（因为都是空）。
      */
-    public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
-        if (t1 == null) return t2;
-        if (t2 == null) return t1;
-
+    public static TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
+        if (t1 == null || t2 == null) {
+            return t1 == null ? t2 : t1;
+        }
         t1.val += t2.val;
         t1.left = mergeTrees(t1.left, t2.left);
         t1.right = mergeTrees(t1.right, t2.right);
@@ -56,7 +56,9 @@ public class ch_617_MergeTwoBinaryTrees {
      * 4. 返回第一个树的根节点。
      */
     public TreeNode mergeTrees2(TreeNode t1, TreeNode t2) {
-        if (t1 == null) return t2;
+        if (t1 == null) {
+            return t2;
+        }
         Stack<TreeNode[]> stack = new Stack<>();
         stack.push(new TreeNode[]{t1, t2});
         while (!stack.isEmpty()) {

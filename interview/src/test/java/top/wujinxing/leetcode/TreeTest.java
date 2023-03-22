@@ -206,9 +206,47 @@ public class TreeTest {
 
     @Test
     public void buildTree2() {
-        int[] preOrder = new int[]{3,9,20,15,7};
-        int[] inOrder = new int[]{9,3,15,20,7};
+        int[] preOrder = new int[]{3, 9, 20, 15, 7};
+        int[] inOrder = new int[]{9, 3, 15, 20, 7};
         Assert.assertEquals("[3,9,20,null,null,15,7]", TreeNode.serialize(Ch_105_ConstructBinaryTreeFromPreOrderAndInorderTraversal.buildTree(preOrder, inOrder)));
+    }
+
+    @Test
+    public void construct() {
+        int[] numbs = new int[]{3, 2, 1};
+        int[] numbs2 = new int[]{3, 2, 1, 6, 0, 5};
+        Assert.assertEquals("[3,null,2,null,1]", TreeNode.serialize(Ch_654_MaximumBinaryTree.constructMaximumBinaryTree(numbs)));
+        Assert.assertEquals("[6,3,5,null,2,0,null,null,1]", TreeNode.serialize(Ch_654_MaximumBinaryTree.constructMaximumBinaryTree(numbs2)));
+    }
+
+
+    @Test
+    public void mergeTrees() {
+        TreeNode t1 = TreeNode.deserialize(new Integer[]{1, 3, 2, 5});
+        TreeNode t2 = TreeNode.deserialize(new Integer[]{2, 1, 3, null, 4, null, 7});
+        Assert.assertEquals("[3,4,5,5,4,null,7]", TreeNode.serialize(Ch_617_MergeTwoBinaryTrees.mergeTrees(t1, t2)));
+    }
+
+    @Test
+    public void bst() {
+        TreeNode root = TreeNode.deserialize(new int[]{4, 2, 7, 1, 3});
+        Assert.assertEquals("[2,1,3]", TreeNode.serialize(Ch_700_SearchInBinarySearchTree.searchBst(root, 2)));
+    }
+
+    @Test
+    public void isValidBst() {
+        TreeNode root = TreeNode.deserialize("[2,1,3]");
+        TreeNode root2 = TreeNode.deserialize("[5,1,4,null,null,3,6]");
+        Assert.assertTrue(Ch_98_ValidateBST.isValidBST4(root));
+        Assert.assertFalse(Ch_98_ValidateBST.isValidBST4(root2));
+    }
+
+    @Test
+    public void getMinimumDifference() {
+        TreeNode root = TreeNode.deserialize("[4,2,6,1,3]");
+        TreeNode root2 = TreeNode.deserialize("[1,0,48,null,null,12,49]");
+        Assert.assertEquals(1, new Ch_530_MinimumAbsoluteDifferenceInBST().getMinimumDifference(root));
+        Assert.assertEquals(1, new Ch_530_MinimumAbsoluteDifferenceInBST().getMinimumDifference(root2));
     }
 
 }
