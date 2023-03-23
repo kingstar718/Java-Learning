@@ -25,7 +25,7 @@ public class Ch_912_SortAnArray {
     }
 
     private static int partition(int[] numbs, int left, int right) {
-        // 基准值
+        // 基准值：选取数组中的第一个元素作为基准值
         int pivot = numbs[left];
         // 标记下标
         int mark = left;
