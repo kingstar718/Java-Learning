@@ -2,6 +2,7 @@ package top.wujinxing.leetcode;
 
 import org.junit.Assert;
 import org.junit.Test;
+import top.wujinxing.leetcode.sort.Ch_179_LargestNumber;
 import top.wujinxing.leetcode.sort.Ch_347_TopKFrequentElements;
 import top.wujinxing.leetcode.sort.Ch_912_SortAnArray;
 
@@ -23,5 +24,11 @@ public class SortTest {
     public void topK() {
         int[] numbs = new int[]{1, 1, 1, 2, 2, 3};
         Assert.assertArrayEquals(new int[]{1, 2}, Ch_347_TopKFrequentElements.topKFrequent(numbs, 2));
+    }
+
+    @Test
+    public void largestNumber() {
+        Assert.assertEquals("210", Ch_179_LargestNumber.largestNumber(new int[]{10, 2}));
+        Assert.assertEquals("9534330", Ch_179_LargestNumber.largestNumber(new int[]{3, 30, 34, 5, 9}));
     }
 }
