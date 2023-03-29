@@ -4,7 +4,7 @@ package top.wujinxing.leetcode.linked_list;
  * @author wujinxing
  * @date 2019 2019/12/30 17:25
  * description 合并两个有序链表
- *
+ * </p>
  * <a href="https://leetcode.cn/problems/merge-two-sorted-lists/submissions/">21. 合并两个有序链表</a>
  */
 public class Ch_21_MergeTwoSortedLists {

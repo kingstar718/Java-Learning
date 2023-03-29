@@ -25,4 +25,21 @@ public class ListNode {
         return sb.substring(0, sb.length() - 1) + "]";
     }
 
+    private static final String EMPTY = "[]";
+    private static final String BLACK = "";
+
+    public static ListNode deserialize(String data) {
+        if (data == null || BLACK.equals(data) || EMPTY.equals(data)) {
+            return null;
+        }
+        String[] array = data.substring(1, data.length() - 1).split(",");
+        ListNode res = new ListNode(-1);
+        ListNode p = res;
+        for (String s : array) {
+            p.next = new ListNode(Integer.parseInt(s));
+            p = p.next;
+        }
+        return res.next;
+    }
+
 }
