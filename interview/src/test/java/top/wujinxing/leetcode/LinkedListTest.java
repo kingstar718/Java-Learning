@@ -7,7 +7,7 @@ import top.wujinxing.leetcode.linked_list.Ch_19_RemoveNthNodeFromEndofList;
 import top.wujinxing.leetcode.linked_list.Ch_21_MergeTwoSortedLists;
 import top.wujinxing.leetcode.linked_list.Ch_23_MergeKSortedLists;
 import top.wujinxing.leetcode.linked_list.Ch_876_MiddleoftheLinkedList;
-import top.wujinxing.leetcode.linked_list.Ch_89_PartitonLinkedList;
+import top.wujinxing.leetcode.linked_list.Ch_86_PartitionLinkedList;
 import top.wujinxing.leetcode.linked_list.ListNode;
 
 /**
@@ -51,7 +51,7 @@ public class LinkedListTest {
     @Test
     public void partition() {
         ListNode head = ListNode.deserialize("[1,4,3,2,5,2]");
-        Assert.assertEquals("[1,2,2,4,3,5]", Ch_89_PartitonLinkedList.partition(head, 3).serialize());
+        Assert.assertEquals("[1,2,2,4,3,5]", Ch_86_PartitionLinkedList.partition(head, 3).serialize());
     }
 
     @Test

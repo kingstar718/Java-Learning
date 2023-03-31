@@ -10,7 +10,7 @@ package top.wujinxing.leetcode.linked_list;
  * <p>
  * 应当保留两个分区中每个节点的相对位置
  */
-public class Ch_89_PartitonLinkedList {
+public class Ch_86_PartitionLinkedList {
     
     public static ListNode partition(ListNode head, int x) {
         ListNode lower = new ListNode(-1);
