@@ -43,7 +43,9 @@ public class LinkedListTest {
     public void removeNthFromEnd() {
         ListNode head = ListNode.deserialize("[1,2,3,4,5]");
         ListNode result = ListNode.deserialize("[1,2,3,5]");
+        ListNode head2 = ListNode.deserialize("[1]");
         Assert.assertEquals(result.serialize(), Ch_19_RemoveNthNodeFromEndofList.removeNthFromEnd(head, 2).serialize());
+        Assert.assertEquals("[]", ListNode.serialize(Ch_19_RemoveNthNodeFromEndofList.removeNthFromEnd2(head2, 1)));
     }
 
     @Test

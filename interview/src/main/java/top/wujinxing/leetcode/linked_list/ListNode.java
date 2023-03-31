@@ -15,6 +15,19 @@ public class ListNode {
         this.val = val;
     }
 
+    public static String serialize(ListNode head) {
+        if (head == null) {
+            return EMPTY;
+        }
+        StringBuilder sb = new StringBuilder("[");
+        ListNode p = head;
+        while (p != null) {
+            sb.append(p.val).append(",");
+            p = p.next;
+        }
+        return sb.substring(0, sb.length() - 1) + "]";
+    }
+
     public String serialize() {
         StringBuilder sb = new StringBuilder("[");
         ListNode p = this;
