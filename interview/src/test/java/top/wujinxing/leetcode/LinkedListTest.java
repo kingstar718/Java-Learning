@@ -2,6 +2,8 @@ package top.wujinxing.leetcode;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import top.wujinxing.leetcode.linked_list.Ch_19_RemoveNthNodeFromEndofList;
 import top.wujinxing.leetcode.linked_list.Ch_21_MergeTwoSortedLists;
 import top.wujinxing.leetcode.linked_list.Ch_23_MergeKSortedLists;
 import top.wujinxing.leetcode.linked_list.ListNode;
@@ -27,6 +29,19 @@ public class LinkedListTest {
                 ListNode.deserialize("[2,6]")
         };
         Assert.assertEquals("[1,1,2,3,4,4,5,6]", Ch_23_MergeKSortedLists.mergeKLists(lists).serialize());
+    }
+
+    @Test
+    public void findFromEnd() {
+        ListNode head = ListNode.deserialize("[1,2,3,4,5,6,7]");
+        Assert.assertEquals(5, Ch_19_RemoveNthNodeFromEndofList.findFromEnd(head, 3).val);
+    }
+
+    @Test
+    public void removeNthFromEnd() {
+        ListNode head = ListNode.deserialize("[1,2,3,4,5]");
+        ListNode result = ListNode.deserialize("[1,2,3,5]");
+        Assert.assertEquals(result.serialize(), Ch_19_RemoveNthNodeFromEndofList.removeNthFromEnd(head, 2).serialize());
     }
 
 }
