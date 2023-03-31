@@ -6,3 +6,6 @@ target/
 
 logs/
 */target
+
+.vscode
+.gitpod.yml
