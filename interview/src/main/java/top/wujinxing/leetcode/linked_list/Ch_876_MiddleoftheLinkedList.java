@@ -2,8 +2,9 @@ package top.wujinxing.leetcode.linked_list;
 
 /**
  * @author wujinxing
- * date 2019 2019/12/30 16:29
- * description 链表的中间节点
+ * @date 2019/12/30 16:29
+ * <p>
+ * 链表的中间节点
  * <p>
  * 给定一个带有头结点 head 的非空单链表，返回链表的中间结点。
  * 如果有两个中间结点，则返回第二个中间结点。
@@ -25,10 +26,12 @@ package top.wujinxing.leetcode.linked_list;
  * 链接：https://leetcode-cn.com/problems/middle-of-the-linked-list
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class ch_876_MiddleoftheLinkedList {
+public class Ch_876_MiddleoftheLinkedList {
 
-    // 快慢指针法
-    public ListNode middleNode(ListNode head) {
+    /**
+     * 快慢指针法
+     */
+    public static ListNode middleNode(ListNode head) {
         ListNode p1 = head, p2 = head;
         while (p2 != null && p2.next != null) {
             p1 = p1.next;
@@ -37,8 +40,11 @@ public class ch_876_MiddleoftheLinkedList {
         return p1;
     }
 
-    // 数组法
-    public ListNode middleNode2(ListNode head) {
+    
+    /**
+     * 数组法
+     */
+    public static ListNode middleNode2(ListNode head) {
         ListNode[] A = new ListNode[100];
         int t = 0;
         // 注意这里的条件，如果是head.next != null 就不能保存最后一位到数组
@@ -48,4 +54,5 @@ public class ch_876_MiddleoftheLinkedList {
         }
         return A[t / 2];
     }
+
 }
