@@ -34,6 +34,11 @@
             <artifactId>jsoup</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.pegdown</groupId>
+            <artifactId>pegdown</artifactId>
+        </dependency>
+
         <!--HBASE START-->
         <dependency>
             <groupId>org.apache.hbase</groupId>
