@@ -1,4 +1,4 @@
-package top.wujinxing.generics;
+package top.wujinxing.generics.get_generics;
 
 /**
  * @author kingstar718

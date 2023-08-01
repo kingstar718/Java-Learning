@@ -1,4 +1,4 @@
-package top.wujinxing.generics;
+package top.wujinxing.generics.get_generics;
 
 
 import lombok.extern.slf4j.Slf4j;
