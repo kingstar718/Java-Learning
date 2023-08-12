@@ -5,6 +5,8 @@ import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpHost;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
+import org.elasticsearch.action.get.GetRequest;
+import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.support.master.AcknowledgedResponse;
@@ -16,6 +18,7 @@ import org.elasticsearch.client.indices.CreateIndexResponse;
 import org.elasticsearch.client.indices.GetIndexRequest;
 import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.common.xcontent.XContentType;
+import org.elasticsearch.search.fetch.subphase.FetchSourceContext;
 
 import java.io.IOException;
 import java.util.UUID;
@@ -60,6 +63,15 @@ public class EsUtils {
         IndexResponse response = client.index(request, RequestOptions.DEFAULT);
         log.info("add doc response status: {}", response.status());
         log.info("add doc response: {}", response);
+    }
+
+    public static void searchDocById(RestHighLevelClient client, String indexName, String id) throws IOException {
+        GetRequest request = new GetRequest(indexName, id);
+        // 不获取返回的_source的上下文
+        //request.fetchSourceContext(new FetchSourceContext(false));
+        //request.storedFields("_none");
+        GetResponse response = client.get(request, RequestOptions.DEFAULT);
+        log.info("es get: {}", response.getSourceAsString());
     }
 
 }

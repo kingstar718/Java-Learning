@@ -37,4 +37,11 @@ public class EsTest {
         map.put("age", 18);
         EsUtils.addDoc(client, indexName, map);
     }
+
+    @Test
+    public void searchDocTest() throws IOException {
+        RestHighLevelClient client = EsUtils.buildHttpClient("127.0.0.1", 9200);
+        String indexName = "test_index";
+        EsUtils.searchDocById(client, indexName, "8f48432537b04ec8b28050dbbf3f325d");
+    }
 }
