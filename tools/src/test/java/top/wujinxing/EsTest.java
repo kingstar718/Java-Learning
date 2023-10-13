@@ -12,6 +12,7 @@ import top.wujinxing.elasticsearch.EsUtils;
 import top.wujinxing.elasticsearch.Product;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -113,6 +114,20 @@ public class EsTest {
     public void distanceQueryTest() throws IOException {
         GeoLocation point = GeoLocation.of(g -> g.coords(List.of(113.949012,22.530297)));
         EsUtils.distanceQuery(esClient, indexName, point, 400d);
+    }
+
+    @Test
+    public void polygonQueryTest() throws IOException {
+        // 面落点搜索
+        List<List<Double>> polygonList = new ArrayList<>();
+        polygonList.add(List.of(113.942373,22.531399));
+        polygonList.add(List.of(113.955111,22.531432));
+        polygonList.add(List.of(113.953261,22.524538));
+        polygonList.add(List.of(113.940451,22.525991));
+        EsUtils.polygonQuery(esClient, indexName, polygonList, null, 10);
+        // 从西处点按距离从近到远排序
+        GeoLocation geoLocation = GeoLocation.of(g -> g.coords(List.of(113.931971,22.528027)));
+        EsUtils.polygonQuery(esClient, indexName, polygonList, geoLocation, 10);
     }
 
 }
