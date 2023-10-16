@@ -1,15 +1,9 @@
 package top.wujinxing.elasticsearch;
 
 import co.elastic.clients.elasticsearch.ElasticsearchClient;
-import co.elastic.clients.elasticsearch._types.DistanceUnit;
-import co.elastic.clients.elasticsearch._types.GeoLocation;
-import co.elastic.clients.elasticsearch._types.SortOptions;
-import co.elastic.clients.elasticsearch._types.SortOrder;
+import co.elastic.clients.elasticsearch._types.*;
 import co.elastic.clients.elasticsearch._types.mapping.Property;
-import co.elastic.clients.elasticsearch._types.query_dsl.GeoDistanceQuery;
-import co.elastic.clients.elasticsearch._types.query_dsl.GeoShapeQuery;
-import co.elastic.clients.elasticsearch._types.query_dsl.Query;
-import co.elastic.clients.elasticsearch._types.query_dsl.RangeQuery;
+import co.elastic.clients.elasticsearch._types.query_dsl.*;
 import co.elastic.clients.elasticsearch.cat.IndicesResponse;
 import co.elastic.clients.elasticsearch.core.*;
 import co.elastic.clients.elasticsearch.core.bulk.BulkOperation;
@@ -22,8 +16,6 @@ import co.elastic.clients.json.jackson.JacksonJsonpMapper;
 import co.elastic.clients.transport.ElasticsearchTransport;
 import co.elastic.clients.transport.endpoints.BooleanResponse;
 import co.elastic.clients.transport.rest_client.RestClientTransport;
-import com.alibaba.fastjson.JSON;
-import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpHost;
 import org.elasticsearch.client.RestClient;
@@ -221,26 +213,40 @@ public class EsUtils {
         log.info("distance query result: {}", list);
     }
 
-    @Data
-    public static class GeoShapeVo {
-        private String type;
-        private String relation;
-        private List<List<List<Double>>> coordinates;
 
-        public GeoShapeVo(List<List<List<Double>>> coordinates) {
-            this.type = "polygon";
-            this.relation = "within";
-            this.coordinates = coordinates;
-        }
-    }
-
+    /**
+     * {
+     *   "query": {
+     *     "bool": {
+     *       "must": {
+     *         "match_all": {}
+     *       },
+     *       "filter": {
+     *         "geo_shape": {
+     *           "location": {
+     *             "shape": {
+     *               "type": "polygon",
+     *               "coordinates": [[[113.942373, 22.531399], [113.955111, 22.531432], [113.953261, 22.524538], [113.940451, 22.525991]]]
+     *             },
+     *             "relation": "within"
+     *           }
+     *         }
+     *       }
+     *     }
+     *   }
+     * }
+     */
     public static void polygonQuery(ElasticsearchClient esClient, String indexName, List<List<Double>> points, GeoLocation sortPoint, int size) throws IOException {
         List<List<List<Double>>> coordinates = new ArrayList<>();
         coordinates.add(points);
+        Map<String, Object> map = new HashMap<>(3);
+        map.put("type", "polygon");
+        map.put("relation", GeoShapeRelation.Within);
+        map.put("coordinates", coordinates);
         Query geoShapeQuery = GeoShapeQuery.of(b -> b
-                .field("location")
-                .shape(s -> s
-                        .shape(JsonData.fromJson(JSON.toJSONString(new GeoShapeVo(coordinates))))))
+                        .field("location")
+                        .shape(s -> s
+                                .shape(JsonData.of(map))))
                 ._toQuery();
         SearchRequest.Builder builder = new SearchRequest.Builder();
         builder.index(indexName);
@@ -256,6 +262,53 @@ public class EsUtils {
             builder.sort(sortOptions);
         }
         SearchResponse<Product> searchResponse = esClient.search(SearchRequest.of(s -> builder), Product.class);
+        List<Product> list = new ArrayList<>();
+        for (Hit<Product> hit : searchResponse.hits().hits()) {
+            list.add(hit.source());
+        }
+        log.info("polygon search result: {}", list);
+    }
+
+
+    /**
+     * {
+     *   "query": {
+     *     "bool": {
+     *       "must": {
+     *         "match_all": {}
+     *       },
+     *       "filter": {
+     *         "geo_shape": {
+     *           "polygon": {
+     *             "shape": {
+     *               "type": "point",
+     *               "coordinates": [113.947305, 22.530055]
+     *             },
+     *             "relation": "contains"
+     *           }
+     *         }
+     *       }
+     *     }
+     *   }
+     * }
+     */
+    public static void polygonQuery(ElasticsearchClient esClient, String indexName, double x, double y, int size) throws IOException {
+        Map<String, Object> map = new HashMap<>(3);
+        map.put("type", "point");
+        map.put("relation", GeoShapeRelation.Contains);
+        map.put("coordinates", List.of(x, y));
+        Query geoShapeQuery = GeoShapeQuery.of(b -> b
+                        .field("polygon")
+                        .shape(s -> s
+                                .shape(JsonData.of(map))))
+                ._toQuery();
+        SearchResponse<Product> searchResponse = esClient.search(s -> s
+                        .index(indexName)
+                        .size(size)
+                        .query(q -> q
+                                .bool(b -> b
+                                        .filter(geoShapeQuery))),
+                Product.class);
         List<Product> list = new ArrayList<>();
         for (Hit<Product> hit : searchResponse.hits().hits()) {
             list.add(hit.source());

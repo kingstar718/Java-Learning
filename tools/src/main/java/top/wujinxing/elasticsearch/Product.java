@@ -17,6 +17,8 @@ public class Product {
 
     private Integer age;
 
+    private String polygon;
+
     public Product() {
     }
 

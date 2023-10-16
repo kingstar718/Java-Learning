@@ -2,10 +2,8 @@ package top.wujinxing;
 
 import co.elastic.clients.elasticsearch.ElasticsearchClient;
 import co.elastic.clients.elasticsearch._types.GeoLocation;
-import co.elastic.clients.elasticsearch._types.mapping.GeoPointProperty;
-import co.elastic.clients.elasticsearch._types.mapping.IntegerNumberProperty;
-import co.elastic.clients.elasticsearch._types.mapping.Property;
-import co.elastic.clients.elasticsearch._types.mapping.TextProperty;
+import co.elastic.clients.elasticsearch._types.mapping.*;
+import co.elastic.clients.elasticsearch.core.UpdateResponse;
 import org.junit.Before;
 import org.junit.Test;
 import top.wujinxing.elasticsearch.EsUtils;
@@ -128,6 +126,44 @@ public class EsTest {
         // 从西处点按距离从近到远排序
         GeoLocation geoLocation = GeoLocation.of(g -> g.coords(List.of(113.931971,22.528027)));
         EsUtils.polygonQuery(esClient, indexName, polygonList, geoLocation, 10);
+    }
+
+
+    @Test
+    public void updateMappingPolygonTest() throws IOException {
+        Map<String, Property> documentMap = new HashMap<>();
+        // 新增polygon多边形区域
+        documentMap.put("polygon", Property.of(p -> p.geoShape(GeoShapeProperty.of(g -> g.ignoreZValue(true)))));
+        EsUtils.updateMappings(esClient, indexName, documentMap);
+    }
+
+    @Test
+    public void addPolygonData() throws IOException {
+        Product p1 = new Product("ebf9f542-4c22-4bbb-ac48-c57f0d90e601", "喜茶", "22.530122,113.947539", 1);
+        Product p2 = new Product("ebf9f542-4c22-4bbb-ac48-c57f0d90e602", "平安银行", "22.530055,113.945805", 2);
+        Map<String, String> xicha = Map.of("polygon", "POLYGON ((113.947305 22.530055, 113.947682 22.530047, 113.947718 22.529788, 113.947341 22.529842, 113.947305 22.530055)) ");
+        Map<String, String> pinan = Map.of("polygon", "POLYGON ((113.945594 22.530184, 113.945994 22.530118, 113.945908 22.529901, 113.945571 22.529892, 113.945594 22.530184)) ");
+
+        UpdateResponse<Product> updateResponse1 = esClient.update(u -> u.
+                index(indexName)
+                .id("ebf9f542-4c22-4bbb-ac48-c57f0d90e601")
+                .doc(xicha), Product.class);
+        UpdateResponse<Product> updateResponse2 = esClient.update(u -> u.
+                index(indexName)
+                .id("ebf9f542-4c22-4bbb-ac48-c57f0d90e602")
+                .doc(pinan), Product.class);
+        System.out.println(updateResponse1.result());
+        System.out.println(updateResponse2.result());
+    }
+
+    @Test
+    public void polygonQueryByPointTest() throws IOException {
+        double x = 113.947305;
+        double y = 22.530055;
+        double x2 = 113.945859;
+        double y2 = 22.529963;
+        EsUtils.polygonQuery(esClient, indexName, x, y, 1);
+        EsUtils.polygonQuery(esClient, indexName, x2, y2, 1);
     }
 
 }
