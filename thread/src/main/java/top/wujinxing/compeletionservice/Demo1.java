@@ -36,11 +36,12 @@ public class Demo1 {
 
             // 3、获取结果
             for (int i = 0; i < taskCount; i++) {
+                // 这里其实是在逐个get，那么整体完成的时间就会是1s+5s
                 Integer result = completionService.take().get();
                 log.info("task i== {} success! {}", result, new Date());
                 list.add(result);
             }
-            log.info("result = {}", list);
+            log.info("result = {}, cost time: {}", list, System.currentTimeMillis() - start);
         } catch (ExecutionException e) {
             e.printStackTrace();
         } finally {
