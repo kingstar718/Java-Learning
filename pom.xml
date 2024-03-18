@@ -29,7 +29,7 @@
         <hbase.version>1.4.9</hbase.version>
         <reactor.version>3.4.18</reactor.version>
         <fastjson.version>1.2.83</fastjson.version>
-        <jedis.version>2.9.3</jedis.version>
+        <jedis.version>3.3.0</jedis.version>
         <lombok.version>1.18.4</lombok.version>
         <vavr.version>0.10.4</vavr.version>
         <netty-all.version>4.1.42.Final</netty-all.version>
