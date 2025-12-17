@@ -20,7 +20,7 @@ public class Ch1Var {
         var str = "Hello World";
         var i = 12;
         log.info("var str: {}", str);
-        log.info("var int: {}", 1);
+        log.info("var int: {}", i);
     }
 
 }
