@@ -1,13 +1,14 @@
 package top.wujinxing.leetcode.labuladong;
-/*
- * @lc app=leetcode.cn id=26 lang=java
- *
- * [26] 删除有序数组中的重复项
- */
 
-// @lc code=start
-class Solution {
-    public int removeDuplicates(int[] nums) {
+
+/**
+ * 删除有序数组中的重复项
+ *
+ * @author wujinxing
+ */
+public class RemoveDuplicates {
+
+    public static int removeDuplicates(int[] nums) {
         if (nums.length == 0) {
             return 0;
         }
@@ -22,6 +23,11 @@ class Solution {
         }
         return slow + 1;
     }
+
+    public static void main(String[] args) {
+        int[] nums = {1, 1, 2};
+        System.out.println(removeDuplicates(nums));
+    }
+
 }
-// @lc code=end
 
