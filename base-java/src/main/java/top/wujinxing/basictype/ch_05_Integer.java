@@ -1,5 +1,8 @@
 package top.wujinxing.basictype;
 
+import org.junit.Assert;
+import org.junit.Test;
+
 /**
  * @author wujinxing
  * date 2019 2019/7/3 16:10
@@ -27,4 +30,23 @@ public class ch_05_Integer {
 
 
     }
+
+    @Test
+    public void test1() {
+        Integer i = new Integer(100);
+        Integer j = new Integer(100);
+        Assert.assertFalse(i == j);
+        Assert.assertFalse(i < j);
+        Assert.assertFalse(i > j);
+    }
+
+    @Test
+    public void test2() {
+        Integer i = 100;
+        Integer j = 100;
+        Assert.assertSame(i, j);
+        Assert.assertFalse(i < j);
+        Assert.assertFalse(i > j);
+    }
+
 }
